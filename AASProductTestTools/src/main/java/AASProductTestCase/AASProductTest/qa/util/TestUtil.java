@@ -22,7 +22,7 @@ public class TestUtil extends TestBase{
 	
 	public static long IMPLICIT_WAIT = 10; 
 	
-	public static String TESTDATA_SHEET_PATH = "C:\\Users\\User\\eclipse-workspace\\AASProductTestTools"
+	public static String TESTDATA_SHEET_PATH = "..\\AASProductTestTools"
 			+ "\\src\\main\\java\\AASProductTestCase\\AASProductTest\\qa\\testdata\\ExtraPTPositiveData.xlsx";
 
 	static Workbook book;
