@@ -40,13 +40,13 @@ public class ExtentReportListenerNG implements IReporter{
 		}
 
 		extent.flush();
-		//extent.close();
+		extent.close();
 	}
 
 	private void buildTestNodes(IResultMap tests, LogStatus status) {
 		ExtentTest test;
 		
-		test = extent.startTest("Test Name","Description");
+		//test = extent.startTest("Test Name","Description");
 
 		if (tests.size() > 0) {
 			for (ITestResult result : tests.getAllResults()) {
