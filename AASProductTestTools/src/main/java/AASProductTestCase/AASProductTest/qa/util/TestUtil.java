@@ -61,7 +61,7 @@ public class TestUtil extends TestBase{
 				//data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
 				sheet.getRow(i + 1).getCell(k).setCellType(Cell.CELL_TYPE_STRING);
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
-				//System.out.println(data[i][k]);
+				System.out.println(data[i][k]);
 			}
 		}
 		return data;
