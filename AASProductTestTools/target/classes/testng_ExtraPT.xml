@@ -7,7 +7,7 @@
 		</listeners>
 		<test name="AAS Login Test" thread-count="1" parallel="false" preserve-order="true">
 			<classes>
-				<class name="AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest"/>
+				<class name="AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest"/>
 			</classes>
 		</test>
 	</suite>
