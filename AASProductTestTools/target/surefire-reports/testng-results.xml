@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="AAS Product Test Suite" duration-ms="169418" started-at="2020-08-14T03:35:49Z" finished-at="2020-08-14T03:38:38Z">
+  <suite started-at="2020-08-15T16:48:37Z" name="AAS Product Test Suite" finished-at="2020-08-15T16:51:23Z" duration-ms="166364">
     <groups>
     </groups>
-    <test name="AAS Login Test" duration-ms="12351" started-at="2020-08-14T03:35:49Z" finished-at="2020-08-14T03:36:01Z">
+    <test started-at="2020-08-15T16:48:37Z" name="AAS Login Test" finished-at="2020-08-15T16:48:46Z" duration-ms="9048">
       <class name="AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@68837a77]" name="setUp" is-config="true" duration-ms="6432" started-at="2020-08-14T11:35:49Z" finished-at="2020-08-14T11:35:55Z">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@1e9e725a]" started-at="2020-08-16T00:48:37Z" name="setUp" finished-at="2020-08-16T00:48:44Z" duration-ms="7204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@68837a77]" name="loginPageTitleTest" duration-ms="8" started-at="2020-08-14T11:35:55Z" finished-at="2020-08-14T11:35:55Z">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@1e9e725a]" started-at="2020-08-16T00:48:44Z" name="loginPageTitleTest" finished-at="2020-08-16T00:48:44Z" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@68837a77]" name="loginTest" duration-ms="5834" started-at="2020-08-14T11:35:55Z" finished-at="2020-08-14T11:36:01Z">
+        <test-method signature="loginTest()[pri:2, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@1e9e725a]" started-at="2020-08-16T00:48:44Z" name="loginTest" finished-at="2020-08-16T00:48:45Z" duration-ms="1246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@68837a77]" name="tearDown" is-config="true" duration-ms="50" started-at="2020-08-14T11:36:01Z" finished-at="2020-08-14T11:36:01Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@1e9e725a]" started-at="2020-08-16T00:48:45Z" name="tearDown" finished-at="2020-08-16T00:48:46Z" duration-ms="582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest -->
     </test> <!-- AAS Login Test -->
-    <test name="AAS Product Test" duration-ms="157045" started-at="2020-08-14T03:36:01Z" finished-at="2020-08-14T03:38:38Z">
+    <test started-at="2020-08-15T16:48:46Z" name="AAS Product Test" finished-at="2020-08-15T16:51:23Z" duration-ms="157295">
       <class name="AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="setUp" is-config="true" duration-ms="7332" started-at="2020-08-14T11:36:01Z" finished-at="2020-08-14T11:36:09Z">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:48:46Z" name="setUp" finished-at="2020-08-16T00:48:53Z" duration-ms="7114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10781" started-at="2020-08-14T11:36:09Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:36:20Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:48:53Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:49:04Z" duration-ms="10759" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,14 +45,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10663" started-at="2020-08-14T11:36:20Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:36:31Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:49:04Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:49:15Z" duration-ms="10732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,14 +66,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10750" started-at="2020-08-14T11:36:31Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:36:41Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:49:15Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:49:25Z" duration-ms="10694" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,14 +87,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10651" started-at="2020-08-14T11:36:41Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:36:52Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:49:25Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:49:36Z" duration-ms="10641" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,14 +108,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10685" started-at="2020-08-14T11:36:52Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:37:03Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:49:36Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:49:47Z" duration-ms="10667" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,14 +129,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10652" started-at="2020-08-14T11:37:03Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:37:13Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:49:47Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:49:57Z" duration-ms="10626" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,14 +150,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10656" started-at="2020-08-14T11:37:13Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:37:24Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:49:57Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:50:08Z" duration-ms="10631" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,14 +171,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10632" started-at="2020-08-14T11:37:24Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:37:35Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:50:08Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:50:19Z" duration-ms="10625" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,14 +192,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10616" started-at="2020-08-14T11:37:35Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:37:45Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:50:19Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:50:29Z" duration-ms="10624" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,14 +213,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10615" started-at="2020-08-14T11:37:45Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:37:56Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:50:29Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:50:40Z" duration-ms="10598" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,14 +234,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10621" started-at="2020-08-14T11:37:56Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:38:06Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:50:40Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:50:50Z" duration-ms="10683" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -255,14 +255,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10645" started-at="2020-08-14T11:38:06Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:38:17Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:50:50Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:51:01Z" duration-ms="10694" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -276,14 +276,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10664" started-at="2020-08-14T11:38:17Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:38:28Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:51:01Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:51:12Z" duration-ms="10567" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,14 +297,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="ExtraPTTest" duration-ms="10648" started-at="2020-08-14T11:38:28Z" data-provider="getExtraPTPositiveData" finished-at="2020-08-14T11:38:38Z">
+        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:51:12Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-16T00:51:22Z" duration-ms="10618" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -318,14 +318,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[11.5]]>
+                <![CDATA[13.5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtraPTTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@2096442d]" name="tearDown" is-config="true" duration-ms="42" started-at="2020-08-14T11:38:38Z" finished-at="2020-08-14T11:38:38Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@4450d156]" started-at="2020-08-16T00:51:22Z" name="tearDown" finished-at="2020-08-16T00:51:23Z" duration-ms="612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

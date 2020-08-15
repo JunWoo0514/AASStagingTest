@@ -61,10 +61,7 @@ public class ExtraPTPageTest extends TestBase{
 		Object data[][] = TestUtil.getTestData(sheetName);
 		return data;
 	}
-	
 
-	
-	
 	//before test case -- launch the browser and login
 	//@test -- execute test case
 		
@@ -95,7 +92,7 @@ public class ExtraPTPageTest extends TestBase{
 	
 	@AfterClass
 	public void tearDown(){
-		driver.close();
+		driver.quit();
 	}
 
 }
