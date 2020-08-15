@@ -29,7 +29,7 @@ public class ExtraPTPageTest extends TestBase{
 	String item = "4";
 	String sheetName = "PositiveExtra";
 	
-	static String testPT = "14.5";
+	//static String testPT = "14.5";
 	
 	
 	/*@DataProvider(name="ExtraPTCase")
@@ -51,6 +51,10 @@ public class ExtraPTPageTest extends TestBase{
 			{"PIKACHU","14",testPT}
 		};
 	}*/
+	public ExtraPTPageTest(){
+		super();
+	}
+	
 	
 	@DataProvider
 	public Object[][] getExtraPTPositiveData() {
@@ -59,9 +63,7 @@ public class ExtraPTPageTest extends TestBase{
 	}
 	
 
-	public ExtraPTPageTest(){
-		super();
-	}
+	
 	
 	//before test case -- launch the browser and login
 	//@test -- execute test case
