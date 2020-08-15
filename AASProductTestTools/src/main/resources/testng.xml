@@ -9,6 +9,9 @@
 				<class name="AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest"/>
 			</classes>
 		</test>
+		<listeners>
+			<listener class-name="AASProductTestCase.AASProductTest.qa.ExtentReportListener.ExtentReportListenerNG"/>
+		</listeners>
 		<test name="AAS Product Test" preserve-order="true" parallel="false">
 			<classes>
 				<class name="AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest"/>
