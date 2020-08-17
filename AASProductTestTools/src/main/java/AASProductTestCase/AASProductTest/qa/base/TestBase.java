@@ -5,9 +5,14 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import AASProductTestCase.AASProductTest.qa.base.DriverManager;
 import AASProductTestCase.AASProductTest.qa.base.DriverManagerFactory;
@@ -22,11 +27,12 @@ public class TestBase {
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
+	public static WebDriverWait wait;
 	
 	public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/AASProductTestCase/AASProductTest"
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ 					"/src/main/java/AASProductTestCase/AASProductTest"
 					+ "/qa/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
@@ -34,6 +40,8 @@ public class TestBase {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		//wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 	}
 	
 	
@@ -45,8 +53,7 @@ public class TestBase {
 			driver = driverManager.getWebDriver();
 		}
 		else if(browserName.equals("FF")){
-			//System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");	
-			//driver = new FirefoxDriver(); 
+			//For Fire Fox
 		}
 		
 		
@@ -63,6 +70,48 @@ public class TestBase {
 		
 		driver.get(prop.getProperty("url"));
 		
+		wait = new WebDriverWait(driver, TestUtil.ELEMENT_WAIT);
+		
 	}
+	
+	//Click Method
+    public void click(WebElement element) {
+    	//System.out.print("1:"+element.toString());
+        waitVisibility(element);
+        element.click();
+    }
+    
+    //Write Text
+    public void writeText(WebElement element, String text) {
+        waitVisibility(element);
+        element.sendKeys(text);
+    }
+    
+    //Clear Text
+    public void clearText(WebElement element) {
+        waitVisibility(element);
+        element.clear();
+    }
+ 
+    //Read Text
+    public String readText(WebElement element) {
+        waitVisibility(element);
+        return element.getText();
+    }
+    
+    public void selectItem(WebElement element, String text) {
+        waitVisibility(element);
+        Select select = new Select(element);	
+        select.selectByVisibleText(text);	
+    }
+	
+	//Wait
+    public void waitVisibility(WebElement element){
+    	//System.out.print("2:"+element.toString());
+        wait.until(ExpectedConditions.visibilityOf(element));
+        
+       // element = new WebDriverWait(driver, TestUtil.ELEMENT_WAIT)
+                //.until(ExpectedConditions.elementToBeClickable(element));
+    }
 
 }

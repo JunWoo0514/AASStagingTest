@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [AAS Product Test Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="AASProductTestCase.AASProductTest.qa.ExtentReportListener.ExtentReportListenerNG"/>
-  </listeners>
-  <test name="AAS Product Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
       <class name="AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest">
         <methods>
-          <include name="ExtraPTTest"/>
+          <include name="ExtraPTTest" invocation-numbers="1 13"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest -->
     </classes>
-  </test> <!-- AAS Product Test(failed) -->
-</suite> <!-- Failed suite [AAS Product Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

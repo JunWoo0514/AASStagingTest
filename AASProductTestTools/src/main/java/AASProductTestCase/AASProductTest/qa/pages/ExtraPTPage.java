@@ -1,10 +1,13 @@
 package AASProductTestCase.AASProductTest.qa.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import AASProductTestCase.AASProductTest.qa.base.TestBase;
 
@@ -124,18 +127,34 @@ public class ExtraPTPage extends TestBase{
 		return driver.getTitle();
 	}
 	
-	public void ExtraPTPositiveTest(String agCode, String prdID, String PTValue) throws InterruptedException {
-		
+	public void findTestingAccount(String agCode) throws InterruptedException{
 		Thread.sleep(1000);	
 		filterName.clear();
+		//clearText(filterName);
+		//writeText(filterName,agCode);
 		filterName.sendKeys(agCode);
 		Thread.sleep(2000);	
 		filterBtn.click();
-		Thread.sleep(2500);	
+		//click(filterBtn);
+	}
+	
+	public void ExtraPTPositiveTest(String prdID, String PTValue) throws InterruptedException {
+		
+		//Thread.sleep(1000);	
+		//filterName.clear();
+		//filterName.sendKeys(agCode);
+		//Thread.sleep(2000);	
+		//filterBtn.click();
+		//click(filterBtn);
+		Thread.sleep(1000);	
 		editBtn.click();
+		//click(editBtn);
 		this.selectPT(prdID, PTValue);
 		saveBtn.click();
-		Thread.sleep(2500);	
+		//click(saveBtn);
+		Thread.sleep(2500);			
+		//new WebDriverWait(driver, 10)
+        //.until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 	}
 	
@@ -201,6 +220,7 @@ public class ExtraPTPage extends TestBase{
 		}
 	}
 	
+	
 	public String getPTResult(String PrdID, String PTVal){
 		
 		String newPT = "";
@@ -250,10 +270,17 @@ public class ExtraPTPage extends TestBase{
 			break;
 		}	
 		
-		if(newPT.equals(PTVal)){
+		/*if (PrdID.equals("6")) {
+			return "999";
+		}else {
+			return newPT;
+		}*/
+		return newPT;
+		
+		/*if(newPT.equals(PTVal)){
 			return "true";
 			}else{
 			return "false";
-			}
+			}*/
 	}
 }

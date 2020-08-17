@@ -10,6 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -66,7 +67,7 @@ public class ExtraPTPageTest extends TestBase{
 	//@test -- execute test case
 		
 	@BeforeClass
-	public void setUp() {
+	public void setUp() throws InterruptedException {
 		initialization();
 		testUtil = new TestUtil();
 		extraPtPage = new ExtraPTPage();
@@ -79,15 +80,17 @@ public class ExtraPTPageTest extends TestBase{
 				extraPtPage = homePage.clickOnExtraPT();
 			}
 		}
+		extraPtPage.findTestingAccount(prop.getProperty("testaccount"));
 	}
 	
+	
 	@Test(dataProvider = "getExtraPTPositiveData")
-	public void ExtraPTTest(String ag_code, String prdID, String ptValue) throws InterruptedException {
-		extraPtPage.ExtraPTPositiveTest(ag_code,prdID,ptValue);
+	public void ExtraPTTest(String prdID, String ptValue) throws InterruptedException {
+		extraPtPage.ExtraPTPositiveTest(prdID,ptValue);
 		double resultPT = new Double(ptValue);
 		DecimalFormat formatter = new DecimalFormat("#0.00");
 		Thread.sleep(2000);
-		Assert.assertEquals("true", extraPtPage.getPTResult(prdID, formatter.format(resultPT)));
+		Assert.assertEquals(formatter.format(resultPT), extraPtPage.getPTResult(prdID, formatter.format(resultPT)));
 	}
 	
 	@AfterClass

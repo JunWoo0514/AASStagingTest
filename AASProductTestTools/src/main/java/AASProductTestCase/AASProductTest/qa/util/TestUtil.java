@@ -22,6 +22,8 @@ public class TestUtil extends TestBase{
 	
 	public static long IMPLICIT_WAIT = 10; 
 	
+	public static long ELEMENT_WAIT = 15; 
+	
 	public static String TESTDATA_SHEET_PATH = "..\\AASProductTestTools"
 			+ "\\src\\main\\java\\AASProductTestCase\\AASProductTest\\qa\\testdata\\ExtraPTPositiveData.xlsx";
 
@@ -32,10 +34,13 @@ public class TestUtil extends TestBase{
 	//	driver.switchTo().frame("mainpanel");
 	//}
 	
-	public static void takeScreenshotAtEndOfTest() throws IOException {
+	public static String takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
-		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
+		String filename = System.currentTimeMillis() + ".png";
+		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + filename));
+		String screenShotDestination = currentDir + "/screenshots/" + filename;
+		return screenShotDestination;
 	}
 	
 	public static Object[][] getTestData(String sheetName) {
@@ -61,7 +66,7 @@ public class TestUtil extends TestBase{
 				//data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
 				sheet.getRow(i + 1).getCell(k).setCellType(Cell.CELL_TYPE_STRING);
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
-				System.out.println(data[i][k]);
+				//System.out.println(data[i][k]);
 			}
 		}
 		return data;

@@ -40,7 +40,8 @@ public class LoginPage extends TestBase {
 			this.selectLangauge();
 			username.sendKeys(userName);
 			password.sendKeys(passWord);
-			this.clickLogin();
+			//this.clickLogin();
+			click(loginButton);
 			
 			return new HomePage();
 		}

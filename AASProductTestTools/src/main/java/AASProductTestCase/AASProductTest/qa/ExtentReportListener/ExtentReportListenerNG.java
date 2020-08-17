@@ -1,6 +1,7 @@
 package AASProductTestCase.AASProductTest.qa.ExtentReportListener;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -17,6 +18,8 @@ import org.testng.xml.XmlSuite;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import AASProductTestCase.AASProductTest.qa.util.TestUtil;
 
 public class ExtentReportListenerNG implements IReporter{
 	
@@ -54,6 +57,15 @@ public class ExtentReportListenerNG implements IReporter{
 
 				test.setStartedTime(getTime(result.getStartMillis()));
 				test.setEndedTime(getTime(result.getEndMillis()));
+			
+				if (status.toString().equals("fail")) {			
+					try {
+						String path = TestUtil.takeScreenshotAtEndOfTest();
+						test.addScreenCapture(path);
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
 
 				for (String group : result.getMethod().getGroups())
 					test.assignCategory(group);

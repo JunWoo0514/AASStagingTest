@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AAS Login Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="AASProductTestCase.AASProductTest.qa.ExtentReportListener.ExtentReportListenerNG"/>
+  </listeners>
+  <test name="AAS Login Test(failed)">
+    <classes>
+      <class name="AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- AAS Login Test(failed) -->
+</suite> <!-- Failed suite [AAS Login Test Suite] -->

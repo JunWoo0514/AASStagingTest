@@ -3,7 +3,7 @@
 
 	<suite name="AAS Login Test Suite">
 		<listeners>
-			<listener class-name="AASProductTestCase.AASProductTest.qa.ExtentReportListener.ExtentReportListenerNG"/>
+			<listener class-name="AASProductTestCase.AASProductTest.qa.ExtentReportListener.TestListeners"/>
 		</listeners>
 		<test name="AAS Login Test" thread-count="1" parallel="false" preserve-order="true">
 			<classes>

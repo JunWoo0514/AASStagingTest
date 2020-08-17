@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 169.143 s - in TestSuite
+Tests run: 16, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 109.778 s <<< FAILURE! - in TestSuite
+ExtraPTTest(AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest)  Time elapsed: 6.395 s  <<< FAILURE!
+java.lang.AssertionError: expected [] but found [10.50]
+	at AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest.ExtraPTTest(ExtraPTPageTest.java:93)
+
+ExtraPTTest(AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest)  Time elapsed: 6.416 s  <<< FAILURE!
+java.lang.AssertionError: expected [999] but found [10.50]
+	at AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest.ExtraPTTest(ExtraPTPageTest.java:93)
+

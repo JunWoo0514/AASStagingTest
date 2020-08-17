@@ -28,13 +28,13 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	@Test(priority=1)
-	public void loginPageTitleTest(){
+	public void LoginPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Henosis");
 	}
 	
 	@Test(priority=2)
-	public void loginTest(){
+	public void LoginTest(){
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
