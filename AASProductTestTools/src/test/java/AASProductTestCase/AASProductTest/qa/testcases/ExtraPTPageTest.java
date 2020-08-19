@@ -3,6 +3,7 @@ package AASProductTestCase.AASProductTest.qa.testcases;
 import java.text.DecimalFormat;
 
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -30,28 +31,6 @@ public class ExtraPTPageTest extends TestBase{
 	String item = "4";
 	String sheetName = "PositiveExtra";
 	
-	//static String testPT = "14.5";
-	
-	
-	/*@DataProvider(name="ExtraPTCase")
-	public static Object[][] dataProviderExtraPTCase() {
-			return new Object[][]{
-			{"PIKACHU","1",testPT},
-			{"PIKACHU","2",testPT},
-			{"PIKACHU","3",testPT},
-			{"PIKACHU","4",testPT},
-			{"PIKACHU","5",testPT},
-			{"PIKACHU","6",testPT},
-			{"PIKACHU","7",testPT},
-			{"PIKACHU","8",testPT},
-			{"PIKACHU","9",testPT},
-			{"PIKACHU","10",testPT},
-			{"PIKACHU","11",testPT},
-			{"PIKACHU","12",testPT},
-			{"PIKACHU","13",testPT},
-			{"PIKACHU","14",testPT}
-		};
-	}*/
 	public ExtraPTPageTest(){
 		super();
 	}
@@ -85,14 +64,19 @@ public class ExtraPTPageTest extends TestBase{
 	
 	
 	@Test(dataProvider = "getExtraPTPositiveData")
-	public void ExtraPTTest(String prdID, String ptValue) throws InterruptedException {
+	public void ExtraPTTest(String prdID, String ptValue, ITestContext context) throws InterruptedException {
+		context.setAttribute("Product", prdID);
+		context.setAttribute("PTValue", ptValue);
 		extraPtPage.ExtraPTPositiveTest(prdID,ptValue);
 		double resultPT = new Double(ptValue);
 		DecimalFormat formatter = new DecimalFormat("#0.00");
 		Thread.sleep(2000);
-		Assert.assertEquals(formatter.format(resultPT), extraPtPage.getPTResult(prdID, formatter.format(resultPT)));
+		String result = extraPtPage.getPTResult(prdID, formatter.format(resultPT));
+		context.setAttribute("Result", "Result expected PT : " + formatter.format(resultPT) + " and received PT : " + result);
+		Assert.assertEquals(formatter.format(resultPT),result);
 	}
-	
+
+
 	@AfterClass
 	public void tearDown(){
 		driver.quit();

@@ -1,6 +1,7 @@
 package AASProductTestCase.AASProductTest.qa.testcases;
 
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -30,11 +31,29 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=1)
 	public void LoginPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "Henosis");
+		Assert.assertEquals(title, prop.getProperty("siteTitle"));
 	}
 	
 	@Test(priority=2)
-	public void LoginTest(){
+	public void loginTestNegative01(ITestContext context) {
+		context.setAttribute("AdminID", prop.getProperty("username"));
+		context.setAttribute("Password", prop.getProperty("wrongPassword"));
+		loginPage.login(prop.getProperty("username"), prop.getProperty("wrongPassword"));
+		Assert.assertEquals(prop.getProperty("Credentials_not_match"), loginPage.getErrorMessage());
+	}
+	
+	@Test(priority=3)
+	public void loginTestNegative02(ITestContext context) {
+		context.setAttribute("AdminID", prop.getProperty("wrongUserName"));
+		context.setAttribute("Password", prop.getProperty("wrongPassword"));
+		loginPage.login(prop.getProperty("wrongUserName"), prop.getProperty("wrongPassword"));
+		Assert.assertEquals(prop.getProperty("Credentials_not_exists"), loginPage.getErrorMessage());
+	}
+	
+	@Test(priority=4)
+	public void LoginTest(ITestContext context){
+		context.setAttribute("AdminID", prop.getProperty("username"));
+		context.setAttribute("Password", prop.getProperty("password"));
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	

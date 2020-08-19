@@ -54,5 +54,12 @@ public class LoginPage extends TestBase {
 		public void clickLogin() {
 			loginButton.click();
 		}
+		
+		public String getErrorMessage() {
+			
+			String errorMessageText = errorMessage.getText();
+			
+			return errorMessageText;
+		}
 
 }

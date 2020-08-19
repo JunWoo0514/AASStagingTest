@@ -276,11 +276,6 @@ public class ExtraPTPage extends TestBase{
 			return newPT;
 		}*/
 		return newPT;
-		
-		/*if(newPT.equals(PTVal)){
-			return "true";
-			}else{
-			return "false";
-			}*/
+
 	}
 }

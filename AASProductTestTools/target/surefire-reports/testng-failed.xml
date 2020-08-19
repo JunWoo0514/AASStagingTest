@@ -8,7 +8,7 @@
     <classes>
       <class name="AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest">
         <methods>
-          <include name="ExtraPTTest" invocation-numbers="4 5"/>
+          <include name="ExtraPTTest" invocation-numbers="8 9"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

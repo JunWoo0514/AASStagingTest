@@ -44,7 +44,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 17, 2020 11:56:09 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 19, 2020 02:13:05 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -60,7 +60,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -96,17 +95,31 @@
 	</section>
 <div id='test-view-charts' class='subview-full'>
     <div id='charts-row' class='row nm-v nm-h'>
-        <div class='col s12 m12 l12 np-h'>
+        <div class='col s12 m6 l6 np-h'>
             <div class='card-panel nm-v'>
                 <div class='left panel-name'>Tests</div>
                 <div class='chart-box' style="max-height:94px;">
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='87.5%'><span class='strong'>14</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>18</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m6 l6 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Steps</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='child-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>45</span> step(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -127,14 +140,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: LoginPageTitleTest</span>
-						<span class='test-time'>Aug 17, 2020 11:56:18 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:13:13 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:56:18 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:56:18 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+8ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:13:13 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:13:13 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+9ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -148,7 +161,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:56:18 AM</td>
+				<td class='timestamp'>2:13:13 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method LoginPageTitleTest Successful</b></span>
 					
@@ -159,17 +172,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: LoginTest</span>
-						<span class='test-time'>Aug 17, 2020 11:56:18 AM</span>
+						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: loginTestNegative01</span>
+						<span class='test-time'>Aug 19, 2020 02:13:15 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:56:18 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:56:20 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+297ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:13:15 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:13:15 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -183,7 +196,97 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:56:20 AM</td>
+				<td class='timestamp'>2:13:15 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'><b>Test Method loginTestNegative01 Successful</b></span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='3'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Admin ID : zino and Password : aaaaqqqq</div>
+			<span class='node-time'>Aug 19, 2020 02:13:15 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: loginTestNegative02</span>
+						<span class='test-time'>Aug 19, 2020 02:13:16 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 19, 2020 02:13:16 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:13:16 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:13:16 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'><b>Test Method loginTestNegative02 Successful</b></span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='5'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Admin ID : wawaba and Password : aaaaqqqq</div>
+			<span class='node-time'>Aug 19, 2020 02:13:16 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: LoginTest</span>
+						<span class='test-time'>Aug 19, 2020 02:13:16 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 19, 2020 02:13:16 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:13:16 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:13:16 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method LoginTest Successful</b></span>
 					
@@ -192,19 +295,29 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='7'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Admin ID : zino and Password : aaaa8888</div>
+			<span class='node-time'>Aug 19, 2020 02:13:16 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='8'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:56:32 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:13:40 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:56:32 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:56:38 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+139ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:13:40 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:13:40 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -218,7 +331,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:56:38 AM</td>
+				<td class='timestamp'>2:13:40 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -227,19 +340,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='9'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 1</div>
+			<span class='node-time'>Aug 19, 2020 02:13:40 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='10'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:13:40 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='11'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:13:40 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='12'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:56:38 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:13:46 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:56:38 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:56:44 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+44ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:13:46 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:13:46 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -253,7 +392,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:56:44 AM</td>
+				<td class='timestamp'>2:13:46 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -262,19 +401,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='13'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 2</div>
+			<span class='node-time'>Aug 19, 2020 02:13:46 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='14'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:13:46 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='15'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:13:46 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='16'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:56:44 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:13:52 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:56:44 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:56:50 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+100ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:13:52 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:13:52 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -288,7 +453,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:56:50 AM</td>
+				<td class='timestamp'>2:13:52 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -297,19 +462,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='17'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 3</div>
+			<span class='node-time'>Aug 19, 2020 02:13:52 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='18'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:13:52 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='19'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:13:52 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='20'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:56:50 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:13:58 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:56:50 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:56:56 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+48ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:13:58 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:13:58 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -323,7 +514,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:56:56 AM</td>
+				<td class='timestamp'>2:13:58 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -332,121 +523,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='21'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 4</div>
+			<span class='node-time'>Aug 19, 2020 02:13:58 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='22'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:13:58 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='23'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:13:58 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='24'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:56:56 AM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:56:56 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:57:03 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+391ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:57:02 AM</td>
-				<td class='step-details'>
-						<details><summary><b><font color=red>Exception Occured, click to see details:</font></b></summary>[org.testng.Assert.fail(Assert.java:93)<br> org.testng.Assert.failNotEquals(Assert.java:512)<br> org.testng.Assert.assertEqualsImpl(Assert.java:134)<br> org.testng.Assert.assertEquals(Assert.java:115)<br> org.testng.Assert.assertEquals(Assert.java:189)<br> org.testng.Assert.assertEquals(Assert.java:199)<br> AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest.ExtraPTTest(ExtraPTPageTest.java:93)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:564)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:661)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> org.testng.TestRunner.privateRun(TestRunner.java:744)<br> org.testng.TestRunner.run(TestRunner.java:602)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:380)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)<br> org.testng.SuiteRunner.run(SuiteRunner.java:289)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1226)<br> org.testng.TestNG.runSuites(TestNG.java:1144)<br> org.testng.TestNG.run(TestNG.java:1115)<br> org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br> org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br> org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br> org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)<br> org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)<br> org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)<br> org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)]</details>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:57:03 AM</td>
-				<td class='step-details'>
-						<b><font color=red>Screenshot of failure</font></b>
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\User\git\AASStagingTest\AASProductTestTools/screenshots/ExtraPTTest_Mon_Aug_17_11_57_02_SGT_2020.png' src='C:\Users\User\git\AASStagingTest\AASProductTestTools/screenshots/ExtraPTTest_Mon_Aug_17_11_57_02_SGT_2020.png' data-src='C:\Users\User\git\AASStagingTest\AASProductTestTools/screenshots/ExtraPTTest_Mon_Aug_17_11_57_02_SGT_2020.png'>
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:57:03 AM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'><b>Test Method ExtraPTTest Failed</b></span>
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:57:03 AM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:57:03 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:57:09 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+417ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:57:09 AM</td>
-				<td class='step-details'>
-						<details><summary><b><font color=red>Exception Occured, click to see details:</font></b></summary>[org.testng.Assert.fail(Assert.java:93)<br> org.testng.Assert.failNotEquals(Assert.java:512)<br> org.testng.Assert.assertEqualsImpl(Assert.java:134)<br> org.testng.Assert.assertEquals(Assert.java:115)<br> org.testng.Assert.assertEquals(Assert.java:189)<br> org.testng.Assert.assertEquals(Assert.java:199)<br> AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest.ExtraPTTest(ExtraPTPageTest.java:93)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:564)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:661)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> org.testng.TestRunner.privateRun(TestRunner.java:744)<br> org.testng.TestRunner.run(TestRunner.java:602)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:380)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)<br> org.testng.SuiteRunner.run(SuiteRunner.java:289)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1226)<br> org.testng.TestNG.runSuites(TestNG.java:1144)<br> org.testng.TestNG.run(TestNG.java:1115)<br> org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br> org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br> org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br> org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)<br> org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)<br> org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)<br> org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)]</details>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:57:09 AM</td>
-				<td class='step-details'>
-						<b><font color=red>Screenshot of failure</font></b>
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\User\git\AASStagingTest\AASProductTestTools/screenshots/ExtraPTTest_Mon_Aug_17_11_57_09_SGT_2020.png' src='C:\Users\User\git\AASStagingTest\AASProductTestTools/screenshots/ExtraPTTest_Mon_Aug_17_11_57_09_SGT_2020.png' data-src='C:\Users\User\git\AASStagingTest\AASProductTestTools/screenshots/ExtraPTTest_Mon_Aug_17_11_57_09_SGT_2020.png'>
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:57:09 AM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'><b>Test Method ExtraPTTest Failed</b></span>
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:57:09 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:14:04 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:57:09 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:57:15 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+177ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:14:04 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:14:04 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -460,7 +575,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:57:15 AM</td>
+				<td class='timestamp'>2:14:04 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -469,19 +584,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='25'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:04 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='26'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:04 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='27'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:14:04 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='28'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:57:15 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:14:10 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:57:15 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:57:21 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+166ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:14:10 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:14:10 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -495,7 +636,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:57:21 AM</td>
+				<td class='timestamp'>2:14:10 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -504,19 +645,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='29'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 6</div>
+			<span class='node-time'>Aug 19, 2020 02:14:10 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='30'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:10 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='31'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:14:10 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='32'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:57:21 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:14:16 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:57:21 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:57:27 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+77ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:14:16 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:14:16 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -530,7 +697,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:57:27 AM</td>
+				<td class='timestamp'>2:14:16 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -539,19 +706,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='33'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 7</div>
+			<span class='node-time'>Aug 19, 2020 02:14:16 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='34'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:16 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='35'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:14:16 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='36'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:57:27 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:14:22 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:57:27 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:57:33 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+996ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:14:22 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:14:22 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -565,7 +758,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:57:33 AM</td>
+				<td class='timestamp'>2:14:22 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -574,19 +767,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='37'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 8</div>
+			<span class='node-time'>Aug 19, 2020 02:14:22 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='38'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:22 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+1ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='39'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:14:22 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='40'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:57:33 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:14:28 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:57:33 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:57:39 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+3ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:14:28 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:14:28 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -600,7 +819,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:57:39 AM</td>
+				<td class='timestamp'>2:14:28 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -609,19 +828,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='41'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 9</div>
+			<span class='node-time'>Aug 19, 2020 02:14:28 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='42'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:28 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='43'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:14:28 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='44'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:57:39 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:14:34 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:57:39 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:57:45 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+3ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:14:34 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:14:34 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -635,7 +880,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:57:45 AM</td>
+				<td class='timestamp'>2:14:34 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -644,19 +889,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='45'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 10</div>
+			<span class='node-time'>Aug 19, 2020 02:14:34 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='46'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:34 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='47'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:14:34 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='48'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:57:45 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:14:40 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:57:45 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:57:51 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+992ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:14:40 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:14:40 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -670,7 +941,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:57:51 AM</td>
+				<td class='timestamp'>2:14:40 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -679,19 +950,45 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='49'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 11</div>
+			<span class='node-time'>Aug 19, 2020 02:14:40 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='50'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:40 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='51'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:14:40 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='52'>
 					<div class='test-heading'>
 						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
-						<span class='test-time'>Aug 17, 2020 11:57:51 AM</span>
+						<span class='test-time'>Aug 19, 2020 02:14:46 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 17, 2020 11:57:51 AM</span>
-	<span class='label end-time'>Aug 17, 2020 11:57:57 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+989ms</span>
+	<span class='label start-time'>Aug 19, 2020 02:14:46 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:14:46 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -705,7 +1002,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:57:57 AM</td>
+				<td class='timestamp'>2:14:46 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
 					
@@ -714,6 +1011,154 @@
 		</tbody>
 	</table>
 </div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='53'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 12</div>
+			<span class='node-time'>Aug 19, 2020 02:14:46 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='54'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:46 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='55'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:14:46 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='56'>
+					<div class='test-heading'>
+						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
+						<span class='test-time'>Aug 19, 2020 02:14:52 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 19, 2020 02:14:52 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:14:52 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:14:52 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='57'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 13</div>
+			<span class='node-time'>Aug 19, 2020 02:14:52 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='58'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:52 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='59'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:14:52 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='60'>
+					<div class='test-heading'>
+						<span class='test-name'>AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest</span>
+						<span class='test-time'>Aug 19, 2020 02:14:58 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 19, 2020 02:14:58 AM</span>
+	<span class='label end-time'>Aug 19, 2020 02:14:58 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:14:58 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'><b>Test Method ExtraPTTest Successful</b></span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='61'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with Product ID : 14</div>
+			<span class='node-time'>Aug 19, 2020 02:14:58 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='62'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Test with PT Value : 11.5</div>
+			<span class='node-time'>Aug 19, 2020 02:14:58 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='63'>
+		<div class='collapsible-header'>
+			<div class='node-name'>Result expected PT : 11.50 and received PT : 11.50</div>
+			<span class='node-time'>Aug 19, 2020 02:14:58 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+	</li>
+</ul>
 					</div>
 				</li>
 			</ul>
@@ -744,31 +1189,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>16</div>
+					<div class='panel-lead'>18</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>0</div>
+					<div class='panel-lead'>45</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 17, 2020 11:56:09 AM</div>
+					<div class='panel-lead'>Aug 19, 2020 02:13:05 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 17, 2020 11:57:58 AM</div>
+			 		<div class='panel-lead'>Aug 19, 2020 02:14:59 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 49s+504ms</div>
+					<div class='panel-lead'>0h 1m 53s+211ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -781,12 +1226,20 @@
 							<th>Value</th>
 						</tr>
 							<tr>
-								<td>Organization</td>
+								<td>Provider</td>
 								<td>Ciphertech AAS QA Team</td>
 							</tr>
 							<tr>
 								<td>Browser</td>
 								<td>Chrome</td>
+							</tr>
+							<tr>
+								<td>OS</td>
+								<td>Windows 10</td>
+							</tr>
+							<tr>
+								<td>Time Zone</td>
+								<td>Asia/Singapore</td>
 							</tr>
 					</table>
 				</div>
@@ -799,16 +1252,16 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 16,
-				passParent: 14,
-				failParent: 2,
+                parentCount: 18,
+				passParent: 18,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
-				childCount: 0,
-				passChild: 0,
+				exceptionsParent: 0,
+				childCount: 45,
+				passChild: 45,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -831,7 +1284,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: LoginPageTitleTest":0.008,"AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: LoginTest":2.297,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.139,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.044,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.1,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.048,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.391,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.417,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.177,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.166,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.077,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":5.996,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.003,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":6.003,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":5.992,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":5.989
+			        "AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: LoginPageTitleTest":0.009,"AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: loginTestNegative01":0,"AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: loginTestNegative02":0,"AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest :: LoginTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0.001,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0,"AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest :: ExtraPTTest":0
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

@@ -32,12 +32,33 @@ public class TestListeners implements ITestListener{
 	public void onTestStart(ITestResult result) {
 		ExtentTest test = extent.createTest(result.getTestClass().getName() + " :: " 
 												+ result.getMethod().getMethodName()); 
+		
 		extentTest.set(test);
 		
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
+		String className = result.getTestClass().getName();
+		String methodName = result.getMethod().getMethodName().toString();
+		
+		//Node Adding Part Follow By Class And Method
+		switch (className) {	
+		case "AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest":
+			if(!methodName.equals("LoginPageTitleTest"))
+				extentTest.get().createNode("Test with Admin ID : " + result.getTestContext().getAttribute("AdminID") + 
+											" and Password : " + result.getTestContext().getAttribute("Password"));
+			break;	
+		case "AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest":
+			if (methodName.equals("ExtraPTTest")) {
+				extentTest.get().createNode("Test with Product ID : " + result.getTestContext().getAttribute("Product"));
+				extentTest.get().createNode("Test with PT Value : " + result.getTestContext().getAttribute("PTValue"));
+				extentTest.get().createNode(""+result.getTestContext().getAttribute("Result"));
+			}	
+			break;	
+		}
+		
+		
 		String logText = "<b>Test Method " + result.getMethod().getMethodName() + " Successful</b>";
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
 		extentTest.get().log(Status.PASS, m);	
@@ -45,7 +66,25 @@ public class TestListeners implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		String methodName = result.getMethod().getMethodName();
+		String className = result.getTestClass().getName();
+		String methodName = result.getMethod().getMethodName().toString();
+		
+		//Node Adding Part Follow By Class And Method
+		switch (className) {	
+		case "AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest":
+			if(!methodName.equals("LoginPageTitleTest"))
+				extentTest.get().error("Test with Admin ID : " + result.getTestContext().getAttribute("AdminID") + 
+						" and Password : " + result.getTestContext().getAttribute("Password"));
+			break;	
+		case "AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest":
+			if (methodName.equals("ExtraPTTest")) {
+				extentTest.get().error("Test with Product ID : " + result.getTestContext().getAttribute("Product"));
+				extentTest.get().error("Test with PT Value : " + result.getTestContext().getAttribute("PTValue"));
+				extentTest.get().error(""+result.getTestContext().getAttribute("Result"));
+			}
+			break;	
+		}
+		
 		String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
 		extentTest.get().fail("<details><summary><b><font color=red>" + 
 							  "Exception Occured, click to see details:" + "</font></b></summary>" +
