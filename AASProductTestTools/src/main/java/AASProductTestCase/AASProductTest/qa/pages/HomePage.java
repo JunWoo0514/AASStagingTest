@@ -19,6 +19,9 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[2]/ul/li[3]/a") 
 	WebElement skinMenu;
 	
+	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[2]/ul/li[2]/a") 
+	WebElement settingMenu;
+	
 	//Initializing the Page Objects:
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -45,9 +48,14 @@ public class HomePage extends TestBase{
 		return new ExtraPTPage();
 	}
 	
-	public ProductSkinPage clickOnSkinPT() {
+	public ProductSkinPage clickOnSkinSetting() {
 		skinMenu.click();
 		return new ProductSkinPage();
+	}
+	
+	public ProductSettingPage clickOnProductSetting() {
+		settingMenu.click();
+		return new ProductSettingPage();
 	}
 
 

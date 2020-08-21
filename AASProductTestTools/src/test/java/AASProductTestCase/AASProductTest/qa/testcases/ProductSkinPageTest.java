@@ -28,8 +28,6 @@ public class ProductSkinPageTest extends TestBase{
 	ProductSkinPage productSkinPage;
 	TestUtil testUtil;
 	String menu = "2";
-	String item = "4";
-	String sheetName = "PositiveExtra";
 	
 	public ProductSkinPageTest(){
 		super();
@@ -37,7 +35,7 @@ public class ProductSkinPageTest extends TestBase{
 	
 	
 	@DataProvider(name="SkinData")
-	public static Object[][] dataProviderExtraPTCase() {
+	public static Object[][] dataProviderSkinCase() {
 		String vhigh = prop.getProperty("skinvhigh");
 		String high = prop.getProperty("skinhigh");
 		String medium = prop.getProperty("skinmedium");
@@ -66,7 +64,7 @@ public class ProductSkinPageTest extends TestBase{
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		
 		homePage.clickMenu(menu);
-		productSkinPage = homePage.clickOnSkinPT();
+		productSkinPage = homePage.clickOnSkinSetting();
 
 		productSkinPage.findTestingAccount(prop.getProperty("testaccount"));
 	}
@@ -78,7 +76,7 @@ public class ProductSkinPageTest extends TestBase{
 		context.setAttribute("SkinValue", skinValue);
 		productSkinPage.SkinPositiveTest(prdID,skinValue);
 		Thread.sleep(1000);
-		String result = productSkinPage.getSkinResult(prdID, skinValue);
+		String result = productSkinPage.getSkinResult(prdID);
 		context.setAttribute("Result", "Result expected value : " + skinValue + " and received value : " + result);
 		Assert.assertEquals(skinValue,result);
 	}

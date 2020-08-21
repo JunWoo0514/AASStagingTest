@@ -48,6 +48,13 @@ public class TestListeners implements ITestListener{
 			if(!methodName.equals("LoginPageTitleTest"))
 				extentTest.get().createNode("Test with Admin ID : " + result.getTestContext().getAttribute("AdminID") + 
 											" and Password : " + result.getTestContext().getAttribute("Password"));
+			break;
+		case "AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest":
+			if (methodName.equals("ProductStatusPositiveTest01")) {
+				extentTest.get().createNode("Test with Product : " + result.getTestContext().getAttribute("Product"));
+				extentTest.get().createNode("Test with Status Value : " + result.getTestContext().getAttribute("Status"));
+				extentTest.get().createNode(""+result.getTestContext().getAttribute("Result"));
+			}	
 			break;	
 		case "AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest":
 			if (methodName.equals("ProductSkinTest")) {
@@ -83,6 +90,13 @@ public class TestListeners implements ITestListener{
 				extentTest.get().error("Test with Admin ID : " + result.getTestContext().getAttribute("AdminID") + 
 						" and Password : " + result.getTestContext().getAttribute("Password"));
 			break;	
+		case "AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest":
+			if (methodName.equals("ProductStatusPositiveTest01")) {
+				extentTest.get().error("Test with Product : " + result.getTestContext().getAttribute("Product"));
+				extentTest.get().error("Test with Status Value : " + result.getTestContext().getAttribute("Status"));
+				extentTest.get().error(""+result.getTestContext().getAttribute("Result"));
+			}
+			break;
 		case "AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest":
 			if (methodName.equals("ProductSkinTest")) {
 				extentTest.get().error("Test with Product ID : " + result.getTestContext().getAttribute("Product"));

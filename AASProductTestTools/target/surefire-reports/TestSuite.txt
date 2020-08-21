@@ -1,4 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.789 s - in TestSuite
+Tests run: 14, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 72.959 s <<< FAILURE! - in TestSuite
+ProductStatusPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest)  Time elapsed: 2.854 s  <<< FAILURE!
+org.openqa.selenium.NoAlertPresentException: 
+no such alert
+  (Session info: chrome=84.0.4147.125)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LTP11', ip: '192.168.0.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 59a94a746b52db79144516268c35e361
+	at AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest.ProductStatusPositiveTest01(ProductSettingPageTest.java:82)
+
+ProductStatusPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest)  Time elapsed: 1.383 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+unexpected alert open: {Alert text : You have successfully updated selected item!}
+  (Session info: chrome=84.0.4147.125): You have successfully updated selected item!
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LTP11', ip: '192.168.0.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 59a94a746b52db79144516268c35e361
+*** Element info: {Using=id, value=check_1}
+	at AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest.ProductStatusPositiveTest01(ProductSettingPageTest.java:82)
+
+ProductStatusPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest)  Time elapsed: 4.816 s  <<< FAILURE!
+java.lang.AssertionError: expected [Active] but found [Disabled]
+	at AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest.ProductStatusPositiveTest01(ProductSettingPageTest.java:86)
+

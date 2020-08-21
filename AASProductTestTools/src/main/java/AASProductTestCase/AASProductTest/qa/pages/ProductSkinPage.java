@@ -78,7 +78,7 @@ public class ProductSkinPage extends TestBase {
 			}
 		}
 		
-		public String getSkinResult(String PrdID, String NewSkinValue){
+		public String getSkinResult(String PrdID){
 			
 			String newSKIN = "";
 			

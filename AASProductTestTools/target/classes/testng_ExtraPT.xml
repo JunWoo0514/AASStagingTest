@@ -5,7 +5,7 @@
 		<listeners>
 			<listener class-name="AASProductTestCase.AASProductTest.qa.ExtentReportListener.TestListeners"/>
 		</listeners>
-		<test name="AAS Login Test" thread-count="1" parallel="false" preserve-order="true">
+		<test name="AAS Extra PT Test" thread-count="1" parallel="false" preserve-order="true">
 			<classes>
 				<class name="AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest"/>
 			</classes>

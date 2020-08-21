@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-	<suite name="AAS Extra PT Test Suite">
+	<suite name="AAS Product Skin Suite">
 		<listeners>
 			<listener class-name="AASProductTestCase.AASProductTest.qa.ExtentReportListener.TestListeners"/>
 		</listeners>
-		<test name="AAS Login Test" thread-count="1" parallel="false" preserve-order="true">
+		<test name="AAS Product Skin Test" thread-count="1" parallel="false" preserve-order="true">
 			<classes>
 				<class name="AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest"/>
 			</classes>
