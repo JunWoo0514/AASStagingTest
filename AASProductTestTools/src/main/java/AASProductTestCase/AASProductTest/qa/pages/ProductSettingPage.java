@@ -68,8 +68,11 @@ public class ProductSettingPage extends TestBase {
 		@FindBy(xpath="//select[contains(@name,'qs_status')]") 
 		WebElement qsStatusSelect;
 		
-		@FindBy(xpath="//select[contains(@name,'sg_status')]") 
-		WebElement sgStatusSelect;
+		//@FindBy(xpath="//select[contains(@name,'sg_status')]") 
+		//WebElement sgStatusSelect;
+		//change to get Xpath 
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tfoot/tr/td[18]/select") 
+		WebElement sgStatusSelect2;
 	
 		//Product Status Display Element
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[5]/font") 
@@ -158,7 +161,7 @@ public class ProductSettingPage extends TestBase {
 			Select mvSelect = new Select(mvStatusSelect);
 			Select ntSelect = new Select(ntStatusSelect);	
 			Select qsSelect = new Select(qsStatusSelect);
-			Select sgSelect = new Select(sgStatusSelect);
+			Select sgSelect = new Select(sgStatusSelect2);
 
 			switch (prdID) {
 				case "1":
