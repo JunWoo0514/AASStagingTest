@@ -32,7 +32,7 @@ public class TestBase {
 	public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ 					"/src/main/java/AASProductTestCase/AASProductTest"
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/AASProductTestCase/AASProductTest"
 					+ "/qa/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {

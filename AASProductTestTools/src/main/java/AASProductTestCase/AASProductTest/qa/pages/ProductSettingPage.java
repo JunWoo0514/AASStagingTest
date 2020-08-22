@@ -16,13 +16,17 @@ public class ProductSettingPage extends TestBase {
 		@FindBy(xpath="//div[contains(@class,'form-group ml-2')]/button") 
 		WebElement filterBtn;
 		
+		//Breadcrumb
+		@FindBy(xpath="//div[contains(@class,'card-header-headerbg')]//ol/li[2]/a") 
+		WebElement CAbreadcrumb;
+		
 		//Select (Account Status Combo Box) Element
 		@FindBy(id="f_status") 
 		WebElement accountSelect;
 		
-		//SMA Account Link
+		//MA Account Link
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[2]/a") 
-		WebElement SMAAccountLink;
+		WebElement DownlineAccountLink;
 		
 		//Radio Box
 		@FindBy(id="check_1") 
@@ -146,8 +150,22 @@ public class ProductSettingPage extends TestBase {
 			driver.switchTo().alert().accept();
 		}
 		
-		public void SMAClick() {
-			SMAAccountLink.click();
+		public void ProsuctStatusActiveTest(String NewStatus) throws InterruptedException {
+			
+			Thread.sleep(1000);	
+			accountBox.click();
+			this.selectStatusALL(NewStatus);
+			submitBtn.click();
+			Thread.sleep(2000);			
+			driver.switchTo().alert().accept();
+		}
+		
+		public void DownlineClick() {
+			DownlineAccountLink.click();
+		}
+		
+		public void CABreadCrumbClick() {
+			CAbreadcrumb.click();
 		}
 		
 		public void selectStatusSingle(String prdID, String NewStatus) {
@@ -213,17 +231,38 @@ public class ProductSettingPage extends TestBase {
 			}
 		}
 		
-		public void selectDeclare() {
-			
-		}
 		
 		public void selectStatusALL(String NewStatus) {
-			Select evoStatus = new Select(evoStatusSelect);	
-			//Select avSkinSelect = new Select(AvSkinSelect);	
-
-					evoStatus.selectByVisibleText(NewStatus);	
-					evoStatus.selectByVisibleText(NewStatus);	
-
+			
+			Select evoSelect = new Select(evoStatusSelect);	
+			Select bgSelect = new Select(bgStatusSelect);	
+			Select mgSelect = new Select(mgStatusSelect);	
+			Select asgSelect = new Select(asgStatusSelect);	
+			Select dgSelect = new Select(dgStatusSelect);	
+			Select avSelect = new Select(avStatusSelect);	
+			Select ppSelect = new Select(ppStatusSelect);	
+			Select sxgSelect = new Select(sxgStatusSelect);	
+			Select ppsSelect = new Select(ppsStatusSelect);
+			Select hbSelect = new Select(habaStatusSelect);	
+			Select mvSelect = new Select(mvStatusSelect);
+			Select ntSelect = new Select(ntStatusSelect);	
+			Select qsSelect = new Select(qsStatusSelect);
+			Select sgSelect = new Select(sgStatusSelect2);
+			
+			evoSelect.selectByVisibleText(NewStatus);	
+			bgSelect.selectByVisibleText(NewStatus);	
+			mgSelect.selectByVisibleText(NewStatus);	
+			asgSelect.selectByVisibleText(NewStatus);	
+			dgSelect.selectByVisibleText(NewStatus);	
+			avSelect.selectByVisibleText(NewStatus);	
+			ppSelect.selectByVisibleText(NewStatus);	
+			sxgSelect.selectByVisibleText(NewStatus);	
+			ppsSelect.selectByVisibleText(NewStatus);	
+			hbSelect.selectByVisibleText(NewStatus);	
+			mvSelect.selectByVisibleText(NewStatus);	
+			ntSelect.selectByVisibleText(NewStatus);	
+			qsSelect.selectByVisibleText(NewStatus);	
+			sgSelect.selectByVisibleText(NewStatus);	
 		}
 		
 		public String getStatusResult(String PrdID){

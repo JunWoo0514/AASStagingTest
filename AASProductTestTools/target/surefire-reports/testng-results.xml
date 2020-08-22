@@ -1,70 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="55" passed="55" failed="0" skipped="0">
+<testng-results ignored="0" total="44" passed="44" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-22T10:28:35Z" name="AAS Login Test Suite" finished-at="2020-08-22T10:28:44Z" duration-ms="8716">
+  <suite started-at="2020-08-22T11:18:30Z" name="AAS Product Setting Test Suite" finished-at="2020-08-22T11:20:37Z" duration-ms="127942">
     <groups>
     </groups>
-    <test started-at="2020-08-22T10:28:35Z" name="AAS Login Test" finished-at="2020-08-22T10:28:44Z" duration-ms="8716">
-      <class name="AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@158d2680]" started-at="2020-08-22T18:28:35Z" name="setUp" finished-at="2020-08-22T18:28:42Z" duration-ms="6147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LoginPageTitleTest()[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@158d2680]" started-at="2020-08-22T18:28:42Z" name="LoginPageTitleTest" finished-at="2020-08-22T18:28:42Z" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginPageTitleTest -->
-        <test-method signature="loginTestNegative01(org.testng.ITestContext)[pri:2, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@158d2680]" started-at="2020-08-22T18:28:42Z" name="loginTestNegative01" finished-at="2020-08-22T18:28:43Z" duration-ms="957" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3dddbe65]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTestNegative01 -->
-        <test-method signature="loginTestNegative02(org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@158d2680]" started-at="2020-08-22T18:28:43Z" name="loginTestNegative02" finished-at="2020-08-22T18:28:43Z" duration-ms="511" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3dddbe65]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTestNegative02 -->
-        <test-method signature="LoginTest(org.testng.ITestContext)[pri:4, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@158d2680]" started-at="2020-08-22T18:28:43Z" name="LoginTest" finished-at="2020-08-22T18:28:43Z" duration-ms="468" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3dddbe65]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest@158d2680]" started-at="2020-08-22T18:28:43Z" name="tearDown" finished-at="2020-08-22T18:28:44Z" duration-ms="607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest -->
-    </test> <!-- AAS Login Test -->
-  </suite> <!-- AAS Login Test Suite -->
-  <suite started-at="2020-08-22T10:28:44Z" name="AAS Product Setting Test Suite" finished-at="2020-08-22T10:30:33Z" duration-ms="109118">
-    <groups>
-    </groups>
-    <test started-at="2020-08-22T10:28:44Z" name="AAS Product Setting Test" finished-at="2020-08-22T10:30:33Z" duration-ms="109118">
+    <test started-at="2020-08-22T11:18:30Z" name="AAS Product Setting Test" finished-at="2020-08-22T11:20:37Z" duration-ms="127942">
       <class name="AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:28:44Z" name="setUp" finished-at="2020-08-22T18:28:56Z" duration-ms="11647" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:18:30Z" name="setUp" finished-at="2020-08-22T19:18:41Z" duration-ms="11948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:28:56Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:02Z" duration-ms="5622" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:18:42Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:18:47Z" duration-ms="5625" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,14 +25,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:02Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:07Z" duration-ms="5540" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:18:47Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:18:53Z" duration-ms="5537" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,14 +46,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:07Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:13Z" duration-ms="5563" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:18:53Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:18:59Z" duration-ms="5520" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -120,14 +67,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:13Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:19Z" duration-ms="5535" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:18:59Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:04Z" duration-ms="5527" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,14 +88,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:19Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:24Z" duration-ms="5526" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:04Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:10Z" duration-ms="5498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -162,14 +109,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:24Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:30Z" duration-ms="5503" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:10Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:15Z" duration-ms="5489" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -183,14 +130,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:30Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:35Z" duration-ms="5537" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:15Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:21Z" duration-ms="5536" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -204,14 +151,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:35Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:41Z" duration-ms="5724" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:21Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:26Z" duration-ms="5623" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -225,14 +172,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:41Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:46Z" duration-ms="5518" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:26Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:32Z" duration-ms="5498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -246,14 +193,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:46Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:52Z" duration-ms="5515" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:32Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:37Z" duration-ms="5484" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -267,14 +214,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:52Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:29:57Z" duration-ms="5530" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:37Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:43Z" duration-ms="5498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -288,14 +235,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:29:57Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:30:03Z" duration-ms="5522" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:43Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:48Z" duration-ms="5482" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -309,14 +256,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:03Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:30:08Z" duration-ms="5507" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:48Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:54Z" duration-ms="5503" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -330,14 +277,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:08Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T18:30:14Z" duration-ms="5505" status="PASS">
+        <test-method signature="ProductStatusPositiveTest01(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:54Z" name="ProductStatusPositiveTest01" data-provider="getProductListeData" finished-at="2020-08-22T19:19:59Z" duration-ms="5547" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -351,18 +298,18 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductStatusPositiveTest01 -->
-        <test-method signature="ProceedSMACheck()[pri:2, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:14Z" name="ProceedSMACheck" finished-at="2020-08-22T18:30:18Z" duration-ms="4435" status="PASS">
+        <test-method signature="ProceedMACheck()[pri:2, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:19:59Z" name="ProceedMACheck" finished-at="2020-08-22T19:20:04Z" duration-ms="4371" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProceedSMACheck -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:18Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:19Z" duration-ms="1033" status="PASS">
+        </test-method> <!-- ProceedMACheck -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:04Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:05Z" duration-ms="1033" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -376,14 +323,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:19Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:20Z" duration-ms="1026" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:05Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:06Z" duration-ms="1025" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -397,14 +344,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:20Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:21Z" duration-ms="1026" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:06Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:07Z" duration-ms="1024" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -418,14 +365,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:22Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:23Z" duration-ms="1033" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:07Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:08Z" duration-ms="1032" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -439,14 +386,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:23Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:24Z" duration-ms="1026" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:08Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:09Z" duration-ms="1022" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -460,14 +407,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:24Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:25Z" duration-ms="1025" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:09Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:10Z" duration-ms="1027" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -481,14 +428,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:25Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:26Z" duration-ms="1020" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:10Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:11Z" duration-ms="1022" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -502,14 +449,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:26Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:27Z" duration-ms="1022" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:11Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:12Z" duration-ms="1023" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -523,14 +470,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:27Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:28Z" duration-ms="1022" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:12Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:13Z" duration-ms="1025" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -544,14 +491,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:28Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:29Z" duration-ms="1019" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:13Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:14Z" duration-ms="1020" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -565,14 +512,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:29Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:30Z" duration-ms="1022" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:14Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:15Z" duration-ms="1023" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -586,14 +533,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:30Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:31Z" duration-ms="1033" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:15Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:16Z" duration-ms="1022" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -607,14 +554,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:31Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:32Z" duration-ms="1023" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:16Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:17Z" duration-ms="1022" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -628,14 +575,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method signature="ProductStatusDownlineCheck_SMA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:32Z" name="ProductStatusDownlineCheck_SMA" data-provider="getProductListeData" finished-at="2020-08-22T18:30:33Z" duration-ms="1031" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProductStatusDownlineCheck_MA(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:17Z" name="ProductStatusDownlineCheck_MA" data-provider="getProductListeData" finished-at="2020-08-22T19:20:18Z" duration-ms="1032" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -649,515 +596,319 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@185339ed]]>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductStatusDownlineCheck_SMA -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@351d00c0]" started-at="2020-08-22T18:30:33Z" name="tearDown" finished-at="2020-08-22T18:30:33Z" duration-ms="648" status="PASS">
+        </test-method> <!-- ProductStatusDownlineCheck_MA -->
+        <test-method signature="ProceedAGCheck()[pri:4, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:18Z" name="ProceedAGCheck" finished-at="2020-08-22T19:20:22Z" duration-ms="4413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProceedAGCheck -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:22Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:23Z" duration-ms="1024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Evolution]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:23Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:24Z" duration-ms="1024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Big Gaming]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:24Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:25Z" duration-ms="1024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Micro Gaming]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:25Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:27Z" duration-ms="1021" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Asia Gaming]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:27Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:28Z" duration-ms="1024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dream Gaming]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:28Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:29Z" duration-ms="1024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Paiza]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:29Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:30Z" duration-ms="1024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Praagmatic Gaming]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:30Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:31Z" duration-ms="1023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sexy Gaming]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:31Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:32Z" duration-ms="1022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pragmatic Slot]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:32Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:33Z" duration-ms="1026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Habanero Slot]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:33Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:34Z" duration-ms="1024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Maverick Slot]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:34Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:35Z" duration-ms="1028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Netent Slot]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:35Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:36Z" duration-ms="1026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[13]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Quicksipn Slot]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method signature="ProductStatusDownlineCheck_AG(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:36Z" name="ProductStatusDownlineCheck_AG" data-provider="getProductListeData" finished-at="2020-08-22T19:20:37Z" duration-ms="1026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[14]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Spade Gaming Slot]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d235635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductStatusDownlineCheck_AG -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest@158d2680]" started-at="2020-08-22T19:20:37Z" name="tearDown" finished-at="2020-08-22T19:20:37Z" duration-ms="706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest -->
     </test> <!-- AAS Product Setting Test -->
   </suite> <!-- AAS Product Setting Test Suite -->
-  <suite started-at="2020-08-22T10:31:27Z" name="AAS Extra PT Test Suite" finished-at="2020-08-22T10:33:03Z" duration-ms="95828">
-    <groups>
-    </groups>
-    <test started-at="2020-08-22T10:31:27Z" name="AAS Extra PT Test" finished-at="2020-08-22T10:33:03Z" duration-ms="95828">
-      <class name="AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:31:27Z" name="setUp" finished-at="2020-08-22T18:31:38Z" duration-ms="10526" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:31:38Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:31:44Z" duration-ms="6109" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:31:44Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:31:50Z" duration-ms="6029" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:31:50Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:31:56Z" duration-ms="6062" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:31:56Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:32:02Z" duration-ms="6034" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:32:02Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:32:08Z" duration-ms="6024" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:32:08Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:32:14Z" duration-ms="6025" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:32:14Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:32:20Z" duration-ms="6163" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[7]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:32:20Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:32:26Z" duration-ms="6026" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:32:26Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:32:32Z" duration-ms="6022" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:32:32Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:32:38Z" duration-ms="6041" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:32:38Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:32:44Z" duration-ms="6034" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:32:44Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:32:50Z" duration-ms="6042" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:32:50Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:32:56Z" duration-ms="6035" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[13]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method signature="ExtraPTTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:32:56Z" name="ExtraPTTest" data-provider="getExtraPTPositiveData" finished-at="2020-08-22T18:33:02Z" duration-ms="6009" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[14]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@30b5f974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtraPTTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest@5656be13]" started-at="2020-08-22T18:33:02Z" name="tearDown" finished-at="2020-08-22T18:33:03Z" duration-ms="615" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.ExtraPTPageTest -->
-    </test> <!-- AAS Extra PT Test -->
-  </suite> <!-- AAS Extra PT Test Suite -->
-  <suite started-at="2020-08-22T10:30:34Z" name="AAS Product Skin Suite" finished-at="2020-08-22T10:31:27Z" duration-ms="53402">
-    <groups>
-    </groups>
-    <test started-at="2020-08-22T10:30:34Z" name="AAS Product Skin Test" finished-at="2020-08-22T10:31:27Z" duration-ms="53402">
-      <class name="AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest@692f203f]" started-at="2020-08-22T18:30:34Z" name="setUp" finished-at="2020-08-22T18:30:44Z" duration-ms="10956" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ProductSkinTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest@692f203f]" started-at="2020-08-22T18:30:44Z" name="ProductSkinTest" data-provider="SkinData" finished-at="2020-08-22T18:30:50Z" duration-ms="5235" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Very High]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@53d9af1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSkinTest -->
-        <test-method signature="ProductSkinTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest@692f203f]" started-at="2020-08-22T18:30:50Z" name="ProductSkinTest" data-provider="SkinData" finished-at="2020-08-22T18:30:55Z" duration-ms="5225" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[High]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@53d9af1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSkinTest -->
-        <test-method signature="ProductSkinTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest@692f203f]" started-at="2020-08-22T18:30:55Z" name="ProductSkinTest" data-provider="SkinData" finished-at="2020-08-22T18:31:00Z" duration-ms="5233" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Medium]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@53d9af1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSkinTest -->
-        <test-method signature="ProductSkinTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest@692f203f]" started-at="2020-08-22T18:31:00Z" name="ProductSkinTest" data-provider="SkinData" finished-at="2020-08-22T18:31:05Z" duration-ms="5227" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Low]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@53d9af1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSkinTest -->
-        <test-method signature="ProductSkinTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest@692f203f]" started-at="2020-08-22T18:31:05Z" name="ProductSkinTest" data-provider="SkinData" finished-at="2020-08-22T18:31:11Z" duration-ms="5208" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Very High]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@53d9af1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSkinTest -->
-        <test-method signature="ProductSkinTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest@692f203f]" started-at="2020-08-22T18:31:11Z" name="ProductSkinTest" data-provider="SkinData" finished-at="2020-08-22T18:31:16Z" duration-ms="5221" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[High]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@53d9af1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSkinTest -->
-        <test-method signature="ProductSkinTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest@692f203f]" started-at="2020-08-22T18:31:16Z" name="ProductSkinTest" data-provider="SkinData" finished-at="2020-08-22T18:31:21Z" duration-ms="5216" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Medium]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@53d9af1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSkinTest -->
-        <test-method signature="ProductSkinTest(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest@692f203f]" started-at="2020-08-22T18:31:21Z" name="ProductSkinTest" data-provider="SkinData" finished-at="2020-08-22T18:31:26Z" duration-ms="5268" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Low]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@53d9af1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSkinTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest@692f203f]" started-at="2020-08-22T18:31:26Z" name="tearDown" finished-at="2020-08-22T18:31:27Z" duration-ms="608" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest -->
-    </test> <!-- AAS Product Skin Test -->
-  </suite> <!-- AAS Product Skin Suite -->
-  <suite started-at="2020-08-22T10:33:03Z" name="AAS Product Test Suite" finished-at="2020-08-22T10:33:03Z" duration-ms="0">
+  <suite started-at="2020-08-22T11:20:38Z" name="AAS Product Test Suite" finished-at="2020-08-22T11:20:38Z" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- AAS Product Test Suite -->

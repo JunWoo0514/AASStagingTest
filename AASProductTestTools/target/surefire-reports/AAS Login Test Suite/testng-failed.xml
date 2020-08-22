@@ -10,7 +10,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="loginTestNegative02" invocation-numbers="0"/>
+          <include name="loginTestNegative01" invocation-numbers="0"/>
         </methods>
       </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest -->
     </classes>
