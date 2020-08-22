@@ -72,10 +72,10 @@ public class ProductSkinPageTest extends TestBase{
 	
 	@Test(dataProvider = "SkinData")
 	public void ProductSkinTest(String prdID, String skinValue, ITestContext context) throws InterruptedException {
-		context.setAttribute("Product", prdID);
-		context.setAttribute("SkinValue", skinValue);
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "Test with Product : " + prdID + "with Skin Value : " + skinValue);
 		productSkinPage.SkinPositiveTest(prdID,skinValue);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String result = productSkinPage.getSkinResult(prdID);
 		context.setAttribute("Result", "Result expected value : " + skinValue + " and received value : " + result);
 		Assert.assertEquals(skinValue,result);

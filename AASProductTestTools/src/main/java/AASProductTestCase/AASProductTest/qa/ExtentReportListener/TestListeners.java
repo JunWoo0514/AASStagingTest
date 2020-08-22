@@ -41,9 +41,10 @@ public class TestListeners implements ITestListener{
 	public void onTestSuccess(ITestResult result) {
 		String className = result.getTestClass().getName();
 		String methodName = result.getMethod().getMethodName().toString();
+		String NodeCount = (String) result.getTestContext().getAttribute("Steps");
 		
 		//Node Adding Part Follow By Class And Method
-		switch (className) {	
+		/*switch (className) {	
 		case "AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest":
 			if(!methodName.equals("LoginPageTitleTest"))
 				extentTest.get().createNode("Test with Admin ID : " + result.getTestContext().getAttribute("AdminID") + 
@@ -54,7 +55,10 @@ public class TestListeners implements ITestListener{
 				extentTest.get().createNode("Test with Product : " + result.getTestContext().getAttribute("Product"));
 				extentTest.get().createNode("Test with Status Value : " + result.getTestContext().getAttribute("Status"));
 				extentTest.get().createNode(""+result.getTestContext().getAttribute("Result"));
-			}	
+			}else if(methodName.equals("ProductStatusDownlineCheck_SMA")) {
+				extentTest.get().createNode("Downline Status Test On Product : " + result.getTestContext().getAttribute("Product"));
+				extentTest.get().createNode(""+result.getTestContext().getAttribute("Result"));
+			}
 			break;	
 		case "AASProductTestCase.AASProductTest.qa.testcases.ProductSkinPageTest":
 			if (methodName.equals("ProductSkinTest")) {
@@ -70,8 +74,16 @@ public class TestListeners implements ITestListener{
 				extentTest.get().createNode(""+result.getTestContext().getAttribute("Result"));
 			}	
 			break;	
+		}*/
+		switch (NodeCount) {	
+		case "1":
+				extentTest.get().createNode(""+result.getTestContext().getAttribute("Process"));											
+			break;	
+		case "2":
+			extentTest.get().createNode(""+result.getTestContext().getAttribute("Process"));		
+			extentTest.get().createNode(""+result.getTestContext().getAttribute("Result"));	
+		break;
 		}
-		
 		
 		String logText = "<b>Test Method " + result.getMethod().getMethodName() + " Successful</b>";
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);

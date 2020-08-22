@@ -65,8 +65,8 @@ public class ExtraPTPageTest extends TestBase{
 	
 	@Test(dataProvider = "getExtraPTPositiveData")
 	public void ExtraPTTest(String prdID, String ptValue, ITestContext context) throws InterruptedException {
-		context.setAttribute("Product", prdID);
-		context.setAttribute("PTValue", ptValue);
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "Test with Product : " + prdID + "with PT Value : " + ptValue);
 		extraPtPage.ExtraPTPositiveTest(prdID,ptValue);
 		double resultPT = new Double(ptValue);
 		DecimalFormat formatter = new DecimalFormat("#0.00");

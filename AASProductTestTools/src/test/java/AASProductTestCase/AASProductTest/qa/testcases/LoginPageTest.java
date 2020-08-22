@@ -36,24 +36,24 @@ public class LoginPageTest extends TestBase{
 	
 	@Test(priority=2)
 	public void loginTestNegative01(ITestContext context) {
-		context.setAttribute("AdminID", prop.getProperty("username"));
-		context.setAttribute("Password", prop.getProperty("wrongPassword"));
+		context.setAttribute("Steps", "1");
+		context.setAttribute("Process", "Test with Admin ID : " + prop.getProperty("username") + " and Password : " + prop.getProperty("wrongPassword"));
 		loginPage.login(prop.getProperty("username"), prop.getProperty("wrongPassword"));
 		Assert.assertEquals(prop.getProperty("Credentials_not_match"), loginPage.getErrorMessage());
 	}
 	
 	@Test(priority=3)
 	public void loginTestNegative02(ITestContext context) {
-		context.setAttribute("AdminID", prop.getProperty("wrongUserName"));
-		context.setAttribute("Password", prop.getProperty("wrongPassword"));
+		context.setAttribute("Steps", "1");
+		context.setAttribute("Process", "Test with Admin ID : " + prop.getProperty("wrongUserName") + " and Password : " + prop.getProperty("wrongPassword"));
 		loginPage.login(prop.getProperty("wrongUserName"), prop.getProperty("wrongPassword"));
 		Assert.assertEquals(prop.getProperty("Credentials_not_exists"), loginPage.getErrorMessage());
 	}
 	
 	@Test(priority=4)
 	public void LoginTest(ITestContext context){
-		context.setAttribute("AdminID", prop.getProperty("username"));
-		context.setAttribute("Password", prop.getProperty("password"));
+		context.setAttribute("Steps", "1");
+		context.setAttribute("Process", "Test with Admin ID : " + prop.getProperty("username") + " and Password : " + prop.getProperty("password"));
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	

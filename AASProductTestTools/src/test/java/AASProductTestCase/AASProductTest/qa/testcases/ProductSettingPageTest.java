@@ -71,16 +71,36 @@ public class ProductSettingPageTest extends TestBase{
 		productSettingPage = homePage.clickOnProductSetting();
 
 		productSettingPage.findTestingAccount(prop.getProperty("SMA2"));
+		Thread.sleep(1000);
 	}
 	
 	
-	@Test(dataProvider = "getProductListeData")
+	@Test(priority=1, dataProvider = "getProductListeData")
 	public void ProductStatusPositiveTest01(String prdID, String productName, ITestContext context) throws InterruptedException {
 		String newStatus = prop.getProperty("disable");
-		context.setAttribute("Product", productName);
-		context.setAttribute("Status", newStatus);
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "Test with Product : " + productName + "with Status Value : " + newStatus);
 		productSettingPage.ProsuctStatusPositiveTest(prdID,newStatus);
 		Thread.sleep(2000);
+		String result = productSettingPage.getStatusResult(prdID);
+		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
+		Assert.assertEquals(newStatus,result);
+	}
+	
+	@Test(priority=2)
+	public void ProceedSMACheck() throws InterruptedException {
+		productSettingPage.SMAClick();
+		Thread.sleep(1000);
+		productSettingPage.findTestingAccount(prop.getProperty("MA2"));
+		//Assert.assertEquals(newStatus,result);
+	}
+	
+	@Test(priority=3, dataProvider = "getProductListeData")
+	public void ProductStatusDownlineCheck_SMA(String prdID, String productName, ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("disable");
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "Downline product status on Product : " + productName + "to check status must be" + newStatus);
+		Thread.sleep(1000);
 		String result = productSettingPage.getStatusResult(prdID);
 		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
 		Assert.assertEquals(newStatus,result);

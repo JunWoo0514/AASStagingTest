@@ -8,7 +8,7 @@
     <classes>
       <class name="AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest">
         <methods>
-          <include name="ProductStatusPositiveTest01" invocation-numbers="13"/>
+          <include name="ProductStatusPositiveTest01" invocation-numbers="9"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

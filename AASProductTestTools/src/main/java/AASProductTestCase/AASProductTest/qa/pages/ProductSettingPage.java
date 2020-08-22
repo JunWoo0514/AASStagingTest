@@ -142,8 +142,12 @@ public class ProductSettingPage extends TestBase {
 			accountBox.click();
 			this.selectStatusSingle(prdID, NewStatus);
 			submitBtn.click();
-			Thread.sleep(1000);			
+			Thread.sleep(2000);			
 			driver.switchTo().alert().accept();
+		}
+		
+		public void SMAClick() {
+			SMAAccountLink.click();
 		}
 		
 		public void selectStatusSingle(String prdID, String NewStatus) {
