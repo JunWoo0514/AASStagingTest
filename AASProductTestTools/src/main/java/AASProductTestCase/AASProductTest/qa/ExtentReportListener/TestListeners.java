@@ -94,9 +94,10 @@ public class TestListeners implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		String className = result.getTestClass().getName();
 		String methodName = result.getMethod().getMethodName().toString();
+		String NodeCount = (String) result.getTestContext().getAttribute("Steps");
 		
 		//Node Adding Part Follow By Class And Method
-		switch (className) {	
+		/*switch (className) {	
 		case "AASProductTestCase.AASProductTest.qa.testcases.LoginPageTest":
 			if(!methodName.equals("LoginPageTitleTest"))
 				extentTest.get().error("Test with Admin ID : " + result.getTestContext().getAttribute("AdminID") + 
@@ -123,6 +124,16 @@ public class TestListeners implements ITestListener{
 				extentTest.get().error(""+result.getTestContext().getAttribute("Result"));
 			}
 			break;	
+		}*/
+		
+		switch (NodeCount) {	
+		case "1":
+				extentTest.get().error(""+result.getTestContext().getAttribute("Process"));											
+			break;	
+		case "2":
+			extentTest.get().error(""+result.getTestContext().getAttribute("Process"));		
+			extentTest.get().error(""+result.getTestContext().getAttribute("Result"));	
+		break;
 		}
 		
 		String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
