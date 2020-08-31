@@ -79,20 +79,26 @@ public class AgActivationPage extends TestBase {
 			
 			Thread.sleep(1000);	
 			editBtn.click();
+			activationURL.clear();
 			activationURL.sendKeys(url);
 			this.selectStatus(status);
 			submitBtn.click();
 			Thread.sleep(1000);		
 			String updateResult = driver.switchTo().alert().getText();
+			System.out.print("Result!!!!!" + updateResult);
+			Thread.sleep(1500);	
 			driver.switchTo().alert().accept();
 			return updateResult;
 		}
 		
-		
-		
 		public void selectStatus(String NewStatus) {
 			Select activeStat = new Select(activationStatus);	
 			activeStat.selectByVisibleText(NewStatus);
+		}
+		
+		public String getActivationStatus() {
+			String returnStat = checkStatus.getText().toString();
+			return returnStat;
 		}
 
 }

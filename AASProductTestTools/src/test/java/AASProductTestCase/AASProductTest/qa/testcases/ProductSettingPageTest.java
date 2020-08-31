@@ -80,7 +80,7 @@ public class ProductSettingPageTest extends TestBase{
 		String newStatus = prop.getProperty("disable");
 		context.setAttribute("Steps", "2");
 		context.setAttribute("Process", "Test with Product : " + productName + " with Status Value : " + newStatus);
-		productSettingPage.ProsuctStatusPositiveTest(prdID,newStatus);
+		productSettingPage.ProductStatusPositiveTest(prdID,newStatus);
 		Thread.sleep(2000);
 		String result = productSettingPage.getStatusResult(prdID);
 		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
@@ -133,7 +133,7 @@ public class ProductSettingPageTest extends TestBase{
 		String newStatus = prop.getProperty("active");
 		context.setAttribute("Steps", "1");
 		context.setAttribute("Process", "Test All Product with Status Value : " + newStatus);
-		productSettingPage.ProsuctStatusActiveTest(newStatus);
+		productSettingPage.ProductStatusActiveTest(newStatus);
 		Thread.sleep(2000);
 	}
 	

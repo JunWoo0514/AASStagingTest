@@ -88,5 +88,11 @@ public class HomePage extends TestBase{
 		PTSettingMenu.click();
 		return new PTSettingPage();
 	}
+	
+	public AgActivationPage clickOnAgActivation() {
+		agActivationMenu.click();
+		return new AgActivationPage();
+	}
+	
 
 }

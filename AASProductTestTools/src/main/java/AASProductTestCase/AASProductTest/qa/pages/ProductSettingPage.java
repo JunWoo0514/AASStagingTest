@@ -146,7 +146,7 @@ public class ProductSettingPage extends TestBase {
 			filterBtn.click();
 		}
 		
-		public void ProsuctStatusPositiveTest(String prdID, String NewStatus) throws InterruptedException {
+		public void ProductStatusPositiveTest(String prdID, String NewStatus) throws InterruptedException {
 			
 			Thread.sleep(1000);	
 			accountBox.click();
@@ -156,7 +156,7 @@ public class ProductSettingPage extends TestBase {
 			driver.switchTo().alert().accept();
 		}
 		
-		public void ProsuctStatusActiveTest(String NewStatus) throws InterruptedException {
+		public void ProductStatusActiveTest(String NewStatus) throws InterruptedException {
 			
 			Thread.sleep(1000);	
 			accountBox.click();
