@@ -30,6 +30,8 @@ public class ExtraPTPageTest extends TestBase{
 	String menu = "2";
 	String item = "4";
 	String sheetName = "PositiveExtra";
+	String sheetNameList = "ProductList";
+	String InnitialExtraPT;
 	
 	public ExtraPTPageTest(){
 		super();
@@ -39,6 +41,12 @@ public class ExtraPTPageTest extends TestBase{
 	@DataProvider
 	public Object[][] getExtraPTPositiveData() {
 		Object data[][] = TestUtil.getTestData(sheetName);
+		return data;
+	}
+	
+	@DataProvider
+	public Object[][] getProductListeData() {
+		Object data[][] = TestUtil.getTestData(sheetNameList);
 		return data;
 	}
 
@@ -53,22 +61,48 @@ public class ExtraPTPageTest extends TestBase{
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		
-		if(menu.equals("2")) {
-			homePage.clickMenu(menu);
-			if(item.equals("4")) {
-				extraPtPage = homePage.clickOnExtraPT();
-			}
-		}
+
+		homePage.clickMenu(menu);
+
+		extraPtPage = homePage.clickOnExtraPT();
+
 		extraPtPage.findTestingAccount(prop.getProperty("testaccount"));
+		//Initial Extra PT data declare
+		InnitialExtraPT = prop.getProperty("Initial_EPT");
 	}
 	
 	
-	@Test(dataProvider = "getExtraPTPositiveData")
+	@Test(priority=1, dataProvider = "getExtraPTPositiveData")
 	public void ExtraPTTest(String prdID, String ptValue, ITestContext context) throws InterruptedException {
 		context.setAttribute("Steps", "2");
 		context.setAttribute("Process", "Test with Product : " + prdID + "with PT Value : " + ptValue);
 		extraPtPage.ExtraPTPositiveTest(prdID,ptValue);
 		double resultPT = new Double(ptValue);
+		DecimalFormat formatter = new DecimalFormat("#0.00");
+		Thread.sleep(2500);
+		String result = extraPtPage.getPTResult(prdID, formatter.format(resultPT));
+		context.setAttribute("Result", "Result expected PT : " + formatter.format(resultPT) + " and received PT : " + result);
+		Assert.assertEquals(formatter.format(resultPT),result);
+	}
+	
+	@Test(priority=2)
+	public void ExtraPTGroupUpdate(ITestContext context) throws InterruptedException {
+		extraPtPage.findTestingAccount(prop.getProperty("AG1"));
+		Thread.sleep(1000);
+		//String newPT = prop.getProperty("CA_Innitial_GPT");
+		context.setAttribute("Steps", "1");
+		context.setAttribute("Process", "Test Set All Product with Extral PT Value : " + InnitialExtraPT);
+		extraPtPage.ExtraPTPositiveTestAll(InnitialExtraPT);
+		Thread.sleep(1000);
+	}
+	
+	@Test(priority=3, dataProvider = "getProductListeData")
+	public void ExtraPTTest02(String prdID, String productName, ITestContext context) throws InterruptedException {
+		//String newPT = prop.getProperty("CA_Innitial_GPT");
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "Extra PT Test On Check on Product : " + productName + " with PT Value : " + InnitialExtraPT);		
+		Thread.sleep(1000);
+		double resultPT = new Double(InnitialExtraPT);
 		DecimalFormat formatter = new DecimalFormat("#0.00");
 		Thread.sleep(2000);
 		String result = extraPtPage.getPTResult(prdID, formatter.format(resultPT));

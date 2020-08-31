@@ -29,8 +29,10 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	@Test(priority=1)
-	public void LoginPageTitleTest(){
+	public void LoginPageTitleTest(ITestContext context){
+		context.setAttribute("Steps", "1");
 		String title = loginPage.validateLoginPageTitle();
+		context.setAttribute("Process", "Test with Correct Website");
 		Assert.assertEquals(title, prop.getProperty("siteTitle"));
 	}
 	

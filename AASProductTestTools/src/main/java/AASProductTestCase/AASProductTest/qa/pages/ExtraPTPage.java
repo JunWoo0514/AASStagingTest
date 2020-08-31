@@ -72,6 +72,9 @@ public class ExtraPTPage extends TestBase{
 	
 	@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[17]") 
 	WebElement SGPT;
+	
+	@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[18]") 
+	WebElement PNGPT;
 
 	//Select (Combo Box) Element
 	@FindBy(id="evo_pt") 
@@ -115,6 +118,10 @@ public class ExtraPTPage extends TestBase{
 
 	@FindBy(id="sg_pt") 
 	WebElement SGPTSelect;
+	
+	@FindBy(id="png_pt") 
+	WebElement PNGPTSelect;
+	
 
 
 	//Initializing the Page Objects:
@@ -158,6 +165,16 @@ public class ExtraPTPage extends TestBase{
 		driver.switchTo().alert().accept();
 	}
 	
+	public void ExtraPTPositiveTestAll(String PTValue) throws InterruptedException {
+		
+		Thread.sleep(1000);	
+		editBtn.click();
+		this.selectPTALL(PTValue);
+		saveBtn.click();
+		Thread.sleep(2500);			
+		driver.switchTo().alert().accept();
+	}
+	
 	public void selectPT(String prdID, String PTValue) {
 		Select evoPT = new Select(EvoPTSelect);	
 		Select bgPT = new Select(BGPTSelect);	
@@ -173,6 +190,8 @@ public class ExtraPTPage extends TestBase{
 		Select ntPT = new Select(NTPTSelect);	
 		Select qsPT = new Select(QSPTSelect);
 		Select sgPT = new Select(SGPTSelect);
+		Select pngPT = new Select(PNGPTSelect);
+		
 		
 		switch (prdID) {
 			case "1":
@@ -217,7 +236,44 @@ public class ExtraPTPage extends TestBase{
 			case "14":
 				sgPT.selectByVisibleText(PTValue);	
 				break;
+			case "15":
+				pngPT.selectByVisibleText(PTValue);	
+				break;		
 		}
+	}
+	
+	public void selectPTALL(String PTValue) {
+		Select evoPT = new Select(EvoPTSelect);	
+		Select bgPT = new Select(BGPTSelect);	
+		Select mgPT = new Select(MGPTSelect);	
+		Select asgPT = new Select(ASGPTSelect);	
+		Select dgPT = new Select(DGPTSelect);	
+		Select avPT = new Select(AVPTSelect);	
+		Select ppPT = new Select(PPPTSelect);	
+		Select sxgPT = new Select(SXGPTSelect);	
+		Select ppsPT = new Select(PPSPTSelect);
+		Select hbPT = new Select(HBPTSelect);	
+		Select mvPT = new Select(MVPTSelect);
+		Select ntPT = new Select(NTPTSelect);	
+		Select qsPT = new Select(QSPTSelect);
+		Select sgPT = new Select(SGPTSelect);
+		Select pngPT = new Select(PNGPTSelect);
+
+		evoPT.selectByVisibleText(PTValue);	
+		bgPT.selectByVisibleText(PTValue);	
+		mgPT.selectByVisibleText(PTValue);	
+		asgPT.selectByVisibleText(PTValue);	
+		dgPT.selectByVisibleText(PTValue);	
+		avPT.selectByVisibleText(PTValue);	
+		ppPT.selectByVisibleText(PTValue);	
+		sxgPT.selectByVisibleText(PTValue);	
+		ppsPT.selectByVisibleText(PTValue);	
+		hbPT.selectByVisibleText(PTValue);	
+		mvPT.selectByVisibleText(PTValue);	
+		ntPT.selectByVisibleText(PTValue);	
+		qsPT.selectByVisibleText(PTValue);	
+		sgPT.selectByVisibleText(PTValue);	
+		pngPT.selectByVisibleText(PTValue);	
 	}
 	
 	
@@ -267,6 +323,9 @@ public class ExtraPTPage extends TestBase{
 			break;
 		case "14":
 			newPT = SGPT.getText();
+			break;	
+		case "15":
+			newPT = PNGPT.getText();
 			break;
 		}	
 		

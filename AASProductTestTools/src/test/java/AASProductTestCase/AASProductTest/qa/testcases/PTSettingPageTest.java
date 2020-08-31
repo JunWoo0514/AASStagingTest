@@ -75,17 +75,17 @@ public class PTSettingPageTest extends TestBase{
 		Thread.sleep(1000);
 		
 		//CA Tier Test PT data declare
-		CAInnitialPT = prop.getProperty("CA_Innitial_GPT");
+		CAInnitialPT = prop.getProperty("CA_Initial_GPT");
 		CAPositivePT = prop.getProperty("CA_Positive_GPT");
 		CANegativePT01 = prop.getProperty("CA_Negative_GPT1");
 		CANegativePT02 = prop.getProperty("CA_Negative_GPT2");
 		//SMA Tier Test PT data declare
-		SMAInnitialPT = prop.getProperty("SMA_Innitial_GPT");
+		SMAInnitialPT = prop.getProperty("SMA_Initial_GPT");
 		SMAPositivePT = prop.getProperty("SMA_Positive_GPT");
 		SMANegativePT01 = prop.getProperty("SMA_Negative_GPT1");
 		SMANegativePT02 = prop.getProperty("SMA_Negative_GPT2");
 		//SMA Tier Test PT data declare
-		MAInnitialPT = prop.getProperty("MA_Innitial_GPT");
+		MAInnitialPT = prop.getProperty("MA_Initial_GPT");
 		MAPositivePT = prop.getProperty("MA_Positive_GPT");
 		MANegativePT = prop.getProperty("MA_Negative_GPT");
 

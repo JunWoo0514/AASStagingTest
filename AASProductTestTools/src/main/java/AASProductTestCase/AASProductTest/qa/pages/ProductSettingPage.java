@@ -72,6 +72,9 @@ public class ProductSettingPage extends TestBase {
 		@FindBy(xpath="//select[contains(@name,'qs_status')]") 
 		WebElement qsStatusSelect;
 		
+		@FindBy(xpath="//select[contains(@name,'png_status')]") 
+		WebElement pngStatusSelect;
+		
 		//@FindBy(xpath="//select[contains(@name,'sg_status')]") 
 		//WebElement sgStatusSelect;
 		//change to get Xpath 
@@ -120,6 +123,9 @@ public class ProductSettingPage extends TestBase {
 		
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[18]/font") 
 		WebElement SgStatus;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[19]/font") 
+		WebElement PngStatus;
 		
 		//Apply Button
 		@FindBy(id="btnSubmit") 
@@ -184,6 +190,7 @@ public class ProductSettingPage extends TestBase {
 			Select ntSelect = new Select(ntStatusSelect);	
 			Select qsSelect = new Select(qsStatusSelect);
 			Select sgSelect = new Select(sgStatusSelect2);
+			Select pngSelect = new Select(pngStatusSelect);
 
 			switch (prdID) {
 				case "1":
@@ -228,6 +235,9 @@ public class ProductSettingPage extends TestBase {
 				case "14":
 					sgSelect.selectByVisibleText(NewStatus);	
 					break;
+				case "15":
+					pngSelect.selectByVisibleText(NewStatus);	
+					break;
 			}
 		}
 		
@@ -248,6 +258,7 @@ public class ProductSettingPage extends TestBase {
 			Select ntSelect = new Select(ntStatusSelect);	
 			Select qsSelect = new Select(qsStatusSelect);
 			Select sgSelect = new Select(sgStatusSelect2);
+			Select pngSelect = new Select(pngStatusSelect);
 			
 			evoSelect.selectByVisibleText(NewStatus);	
 			bgSelect.selectByVisibleText(NewStatus);	
@@ -263,6 +274,7 @@ public class ProductSettingPage extends TestBase {
 			ntSelect.selectByVisibleText(NewStatus);	
 			qsSelect.selectByVisibleText(NewStatus);	
 			sgSelect.selectByVisibleText(NewStatus);	
+			pngSelect.selectByVisibleText(NewStatus);
 		}
 		
 		public String getStatusResult(String PrdID){
@@ -311,6 +323,9 @@ public class ProductSettingPage extends TestBase {
 				break;
 			case "14":
 				newStat = SgStatus.getText();
+				break;
+			case "15":
+				newStat = PngStatus.getText();
 				break;
 			}	
 			

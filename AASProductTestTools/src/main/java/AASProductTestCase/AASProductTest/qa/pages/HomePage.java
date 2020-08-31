@@ -10,8 +10,25 @@ import AASProductTestCase.AASProductTest.qa.base.TestBase;
 public class HomePage extends TestBase{
 	
 	//Page Factory
+	//Menu List
+	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[1]/a") 
+	WebElement Menu1;
+	
 	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[2]/a") 
 	WebElement Menu2;
+	
+	//MenuItemList
+	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[1]/ul/li[1]/a") 
+	WebElement createAdminMenu;
+	
+	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[1]/ul/li[2]/a") 
+	WebElement accountListMenu;
+	
+	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[1]/ul/li[3]/a") 
+	WebElement creditMenu;
+	
+	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[1]/ul/li[4]/a") 
+	WebElement agActivationMenu;
 	
 	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[2]/ul/li[4]/a") 
 	WebElement extraPTMenu;
@@ -41,9 +58,15 @@ public class HomePage extends TestBase{
 	}
 	
 	public void clickMenu(String section) {
-		if(section.equals("2")) {
-			Menu2.click();
+		switch (section) {
+		case "1":
+			Menu1.click();	
+			break;
+		case "2":
+			Menu2.click();	
+			break;	
 		}
+		
 	}
 	
 	public ExtraPTPage clickOnExtraPT() {
