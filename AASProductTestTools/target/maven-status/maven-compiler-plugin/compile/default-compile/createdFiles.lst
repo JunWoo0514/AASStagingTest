@@ -1,5 +1,3 @@
-AASProductTestCase\AASProductTest\qa\ExtentReportListener\TestListeners.class
-AASProductTestCase\AASProductTest\qa\base\ChromeDriverManager.class
 AASProductTestCase\AASProductTest\qa\pages\HomePage.class
 AASProductTestCase\AASProductTest\qa\ExtentReportListener\ExtentReportListenerNG.class
 AASProductTestCase\AASProductTest\qa\pages\ProductSkinPage.class
@@ -7,6 +5,8 @@ AASProductTestCase\AASProductTest\qa\base\DriverManagerFactory$1.class
 AASProductTestCase\AASProductTest\qa\base\DriverType.class
 AASProductTestCase\AASProductTest\qa\pages\ExtraPTPage.class
 AASProductTestCase\AASProductTest\qa\pages\ProductSettingPage.class
+AASProductTestCase\AASProductTest\qa\ExtentReportListener\TestListeners.class
+AASProductTestCase\AASProductTest\qa\base\ChromeDriverManager.class
 AASProductTestCase\AASProductTest\qa\util\WebEventListener.class
 AASProductTestCase\AASProductTest\qa\base\DriverManagerFactory.class
 AASProductTestCase\AASProductTest\qa\base\TestBase.class

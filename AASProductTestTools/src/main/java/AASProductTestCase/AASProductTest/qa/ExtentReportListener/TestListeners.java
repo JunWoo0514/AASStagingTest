@@ -77,10 +77,15 @@ public class TestListeners implements ITestListener{
 		}*/
 		switch (NodeCount) {	
 		case "1":
-				extentTest.get().createNode(""+result.getTestContext().getAttribute("Process"));											
+			extentTest.get().createNode(""+result.getTestContext().getAttribute("Process"));											
 			break;	
 		case "2":
 			extentTest.get().createNode(""+result.getTestContext().getAttribute("Process"));		
+			extentTest.get().createNode(""+result.getTestContext().getAttribute("Result"));	
+			break;
+		case "3":
+			extentTest.get().createNode(""+result.getTestContext().getAttribute("Process1"));	
+			extentTest.get().createNode(""+result.getTestContext().getAttribute("Process2"));	
 			extentTest.get().createNode(""+result.getTestContext().getAttribute("Result"));	
 		break;
 		}
@@ -128,10 +133,15 @@ public class TestListeners implements ITestListener{
 		
 		switch (NodeCount) {	
 		case "1":
-				extentTest.get().error(""+result.getTestContext().getAttribute("Process"));											
+			extentTest.get().error(""+result.getTestContext().getAttribute("Process"));											
 			break;	
 		case "2":
 			extentTest.get().error(""+result.getTestContext().getAttribute("Process"));		
+			extentTest.get().error(""+result.getTestContext().getAttribute("Result"));	
+			break;
+		case "3":
+			extentTest.get().error(""+result.getTestContext().getAttribute("Process1"));	
+			extentTest.get().error(""+result.getTestContext().getAttribute("Process2"));	
 			extentTest.get().error(""+result.getTestContext().getAttribute("Result"));	
 		break;
 		}

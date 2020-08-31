@@ -1,4 +1,64 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 128.684 s - in TestSuite
+Tests run: 200, Failures: 15, Errors: 0, Skipped: 0, Time elapsed: 700.113 s <<< FAILURE! - in TestSuite
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.573 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.61 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.589 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.577 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.634 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.642 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.592 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.581 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.602 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.599 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.611 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.586 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.578 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.58 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+
+PTSettingSMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.678 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMANegativeTest01(PTSettingPageTest.java:240)
+

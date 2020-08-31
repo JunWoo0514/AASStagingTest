@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+	<suite name="AAS Product Setting Test Suite">
+		<listeners>
+			<listener class-name="AASProductTestCase.AASProductTest.qa.ExtentReportListener.TestListeners"/>
+		</listeners>
+		<test name="AAS PT Setting Test" thread-count="1" parallel="false" preserve-order="true">
+			<classes>
+				<class name="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest"/>
+			</classes>
+		</test>
+	</suite>
+

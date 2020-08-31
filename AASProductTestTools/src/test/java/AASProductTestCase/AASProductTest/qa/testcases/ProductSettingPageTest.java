@@ -79,7 +79,7 @@ public class ProductSettingPageTest extends TestBase{
 	public void ProductStatusPositiveTest01(String prdID, String productName, ITestContext context) throws InterruptedException {
 		String newStatus = prop.getProperty("disable");
 		context.setAttribute("Steps", "2");
-		context.setAttribute("Process", "Test with Product : " + productName + "with Status Value : " + newStatus);
+		context.setAttribute("Process", "Test with Product : " + productName + " with Status Value : " + newStatus);
 		productSettingPage.ProsuctStatusPositiveTest(prdID,newStatus);
 		Thread.sleep(2000);
 		String result = productSettingPage.getStatusResult(prdID);
@@ -99,7 +99,7 @@ public class ProductSettingPageTest extends TestBase{
 	public void ProductStatusDownlineCheck_MA(String prdID, String productName, ITestContext context) throws InterruptedException {
 		String newStatus = prop.getProperty("disable");
 		context.setAttribute("Steps", "2");
-		context.setAttribute("Process", "Downline product status on Product : " + productName + "to check status must be : " + newStatus);
+		context.setAttribute("Process", "Downline product status on Product : " + productName + " to check status must be : " + newStatus);
 		Thread.sleep(1000);
 		String result = productSettingPage.getStatusResult(prdID);
 		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
@@ -118,7 +118,7 @@ public class ProductSettingPageTest extends TestBase{
 	public void ProductStatusDownlineCheck_AG(String prdID, String productName, ITestContext context) throws InterruptedException {
 		String newStatus = prop.getProperty("disable");
 		context.setAttribute("Steps", "2");
-		context.setAttribute("Process", "Downline product status on Product : " + productName + "to check status must be : " + newStatus);
+		context.setAttribute("Process", "Downline product status on Product : " + productName + " to check status must be : " + newStatus);
 		Thread.sleep(1000);
 		String result = productSettingPage.getStatusResult(prdID);
 		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
@@ -131,7 +131,7 @@ public class ProductSettingPageTest extends TestBase{
 		productSettingPage.findTestingAccount(prop.getProperty("SMA2"));
 		Thread.sleep(1000);
 		String newStatus = prop.getProperty("active");
-		context.setAttribute("Steps", "2");
+		context.setAttribute("Steps", "1");
 		context.setAttribute("Process", "Test All Product with Status Value : " + newStatus);
 		productSettingPage.ProsuctStatusActiveTest(newStatus);
 		Thread.sleep(2000);
@@ -141,13 +141,12 @@ public class ProductSettingPageTest extends TestBase{
 	public void ProductStatusActiveTest(String prdID, String productName, ITestContext context) throws InterruptedException {
 		String newStatus = prop.getProperty("active");
 		context.setAttribute("Steps", "2");
-		context.setAttribute("Process", "Test with Product : " + productName + "with Status Value : " + newStatus);
+		context.setAttribute("Process", "Check on Product : " + productName + " with Status Value : " + newStatus);		
 		Thread.sleep(2000);
 		String result = productSettingPage.getStatusResult(prdID);
 		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
 		Assert.assertEquals(newStatus,result);
 	}
-
 
 	@AfterClass
 	public void tearDown(){

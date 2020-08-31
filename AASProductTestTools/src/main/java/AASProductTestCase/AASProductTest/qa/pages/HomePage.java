@@ -22,6 +22,9 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[2]/ul/li[2]/a") 
 	WebElement settingMenu;
 	
+	@FindBy(xpath="//div[contains(@class,'sidebar')]/nav/ul/li[2]/ul/li[1]/a") 
+	WebElement PTSettingMenu;
+	
 	//Initializing the Page Objects:
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -58,5 +61,9 @@ public class HomePage extends TestBase{
 		return new ProductSettingPage();
 	}
 
+	public PTSettingPage clickOnPTSetting() {
+		PTSettingMenu.click();
+		return new PTSettingPage();
+	}
 
 }
