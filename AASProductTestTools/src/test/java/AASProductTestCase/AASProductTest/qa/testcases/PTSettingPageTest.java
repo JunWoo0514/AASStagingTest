@@ -109,6 +109,7 @@ public class PTSettingPageTest extends TestBase{
 		double maxPT = newGPT + newEPT;
 		context.setAttribute("Result", "Result expected value : " + CAPositivePT + " and received value : " + finalGPT);
 		Assert.assertEquals(maxCAPT,maxPT);
+		Assert.assertEquals(CAPositivePT,finalGPT);
 	}
 	
 	@Test(priority=2)
@@ -136,6 +137,7 @@ public class PTSettingPageTest extends TestBase{
 		double maxPT = newGPT + newEPT;
 		context.setAttribute("Result", "Result expected value : " + CAInnitialPT + " and received value : " + finalGPT);
 		Assert.assertEquals(maxCAPT,maxPT);	
+		Assert.assertEquals(CAInnitialPT,finalGPT);	
 	}
 	
 	@Test(priority=4, dataProvider = "getProductListeData")
@@ -155,6 +157,7 @@ public class PTSettingPageTest extends TestBase{
 		double maxPT = newGPT + newEPT;
 		context.setAttribute("Result", "Result expected value will NOT : " + CANegativePT01 + " and received value : " + finalGPT);
 		Assert.assertEquals(maxCAPT,maxPT);
+		Assert.assertNotEquals(CANegativePT01,finalGPT);	
 	}
 	
 	@Test(priority=5, dataProvider = "getProductListeData")
@@ -174,6 +177,7 @@ public class PTSettingPageTest extends TestBase{
 		double maxPT = newGPT + newEPT;
 		context.setAttribute("Result", "Result expected value will NOT : " + CANegativePT02 + " and received value : " + finalGPT);
 		Assert.assertEquals(maxCAPT,maxPT);
+		Assert.assertNotEquals(CANegativePT02,finalGPT);	
 	}
 	
 	///////SMA Tier Test///////
@@ -218,6 +222,7 @@ public class PTSettingPageTest extends TestBase{
 		double maxPT = newGPT + newEPT;
 		context.setAttribute("Result", "Result expected value : " + SMAPositivePT + " and received value : " + finalGPT);
 		Assert.assertEquals(maxSMAPT,maxPT);
+		Assert.assertEquals(SMAPositivePT,finalGPT);
 	}
 	
 	@Test(priority=8, dataProvider = "getProductListeData")
@@ -285,6 +290,7 @@ public class PTSettingPageTest extends TestBase{
 		double maxPT = newGPT + newEPT;
 		context.setAttribute("Result", "Result expected value : " + SMAInnitialPT + " and received value : " + finalGPT);
 		Assert.assertEquals(maxSMAPT,maxPT);	
+		Assert.assertEquals(SMAInnitialPT,finalGPT);	
 	}
 	
 	///////MA Tier Test///////
@@ -329,6 +335,7 @@ public class PTSettingPageTest extends TestBase{
 		double maxPT = newGPT + newEPT;
 		context.setAttribute("Result", "Result expected value : " + MAPositivePT + " and received value : " + finalGPT);
 		Assert.assertEquals(maxMAPT,maxPT);
+		Assert.assertEquals(MAPositivePT,finalGPT);
 	}
 	
 	@Test(priority=15, dataProvider = "getProductListeData")
@@ -373,6 +380,7 @@ public class PTSettingPageTest extends TestBase{
 		double maxPT = newGPT + newEPT;
 		context.setAttribute("Result", "Result expected value : " + MAInnitialPT + " and received value : " + finalGPT);
 		Assert.assertEquals(maxMAPT,maxPT);	
+		Assert.assertEquals(MAInnitialPT,finalGPT);	
 	}
 	
 	

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="31.097" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="687.453" tests="200" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire11433185616068788486\surefirebooter16481356693284503848.jar C:\Users\User\AppData\Local\Temp\surefire11433185616068788486 2020-09-01T00-01-09_074-jvmRun1 surefire17065151210049481932tmp surefire_03308825656299037005tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire325589014433118062\surefirebooter6602555073478081700.jar C:\Users\User\AppData\Local\Temp\surefire325589014433118062 2020-09-03T12-32-57_853-jvmRun1 surefire869356082153842418tmp surefire_017383949863456869721tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\User\git\AASStagingTest\AASProductTestTools\target\test-classes;C:\Users\User\git\AASStagingTest\AASProductTestTools\target\classes;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\User\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\User\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\User\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\User\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\User\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\User\.m2\repository\org\testng\testng\6.11\testng-6.11.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.64\jcommander-1.64.jar;C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.17\snakeyaml-1.17.jar;C:\Users\User\.m2\repository\org\apache\poi\poi\3.9\poi-3.9.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-ooxml\3.9\poi-ooxml-3.9.jar;C:\Users\User\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\User\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.9\poi-ooxml-schemas-3.9.jar;C:\Users\User\.m2\repository\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;C:\Users\User\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-scratchpad\3.9\poi-scratchpad-3.9.jar;C:\Users\User\.m2\repository\org\apache\poi\ooxml-schemas\1.1\ooxml-schemas-1.1.jar;C:\Users\User\.m2\repository\org\apache\poi\openxml4j\1.0-beta\openxml4j-1.0-beta.jar;C:\Users\User\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\User\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\User\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\User\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\User\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\User\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\User\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\User\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\User\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire11433185616068788486\surefirebooter16481356693284503848.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire325589014433118062\surefirebooter6602555073478081700.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="14.0.1+7"/>
@@ -55,7 +55,204 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="AGActivationTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.AgActivationPageTest" time="5.931"/>
-  <testcase name="AGActivationTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.AgActivationPageTest" time="5.935"/>
-  <testcase name="AGActivationTest03" classname="AASProductTestCase.AASProductTest.qa.testcases.AgActivationPageTest" time="5.88"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.718"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.638"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.606"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.605"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.625"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.654"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.734"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.696"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.679"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.898"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.583"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.582"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.604"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.604"/>
+  <testcase name="PTSettingCAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.587"/>
+  <testcase name="PTSettingCAGroupUpdate" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="8.368"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.046"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.039"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.04"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.043"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.046"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.06"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.044"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.043"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.06"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.042"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.043"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.043"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.042"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.044"/>
+  <testcase name="PTSettingCAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.04"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.647"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.624"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.735"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.755"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.703"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.58"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.555"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.551"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.564"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.581"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.59"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.583"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.574"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.603"/>
+  <testcase name="PTSettingCANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.757"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.661"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.604"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.593"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.579"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.578"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.637"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.58"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.582"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.66"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.595"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.567"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.662"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.568"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.555"/>
+  <testcase name="PTSettingCANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.733"/>
+  <testcase name="ProceedSMACheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.393"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.056"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.062"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.047"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.044"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.048"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.053"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.039"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.04"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.05"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.055"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.042"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.049"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.041"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.041"/>
+  <testcase name="PTSettingSMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.043"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.638"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.575"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.571"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.576"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.556"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.607"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.572"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.705"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.619"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.597"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.567"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.567"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.579"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.581"/>
+  <testcase name="PTSettingSMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.666"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.67"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.582"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.536"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.595"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.575"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.564"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.62"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.622"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.576"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.628"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.577"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.552"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.541"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.713"/>
+  <testcase name="PTSettingSMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.594"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.56"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.555"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.613"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.577"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.573"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.584"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.625"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.637"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.58"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.575"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.572"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.54"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.61"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.736"/>
+  <testcase name="PTSettingSMANegativeTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.556"/>
+  <testcase name="PTSettingSMAGroupUpdate" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="8.608"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.061"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.042"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.042"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.051"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.053"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.048"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.054"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.042"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.042"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.044"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.051"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.05"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.042"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.043"/>
+  <testcase name="PTSettingSMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.044"/>
+  <testcase name="ProceedMACheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.424"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.039"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.035"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.041"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.04"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.037"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.038"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.035"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.04"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.041"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.042"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.044"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.052"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.049"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.043"/>
+  <testcase name="PTSettingMAGivenPTCheck" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.047"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.618"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.551"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.548"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.556"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.543"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.565"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.534"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.544"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.538"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.569"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.543"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.557"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.55"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.578"/>
+  <testcase name="PTSettingMAPositiveTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.564"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.621"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.63"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.672"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.637"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.582"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.585"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.565"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.699"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.613"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.562"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.534"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.751"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.543"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.6"/>
+  <testcase name="PTSettingMANegativeTest01" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="4.617"/>
+  <testcase name="PTSettingMAGroupUpdate" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="8.294"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.042"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.04"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.04"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.04"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.05"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.044"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.053"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.041"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.041"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.041"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.038"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.051"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.052"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.043"/>
+  <testcase name="PTSettingMAPositiveTest02" classname="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest" time="1.04"/>
 </testsuite>
