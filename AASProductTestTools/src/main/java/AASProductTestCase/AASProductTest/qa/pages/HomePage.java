@@ -94,5 +94,9 @@ public class HomePage extends TestBase{
 		return new AgActivationPage();
 	}
 	
+	public CreditPage clickOnCredit() {
+		creditMenu.click();
+		return new CreditPage();
+	}
 
 }
