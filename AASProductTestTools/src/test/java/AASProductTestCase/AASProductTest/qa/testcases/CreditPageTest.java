@@ -30,8 +30,10 @@ public class CreditPageTest extends TestBase{
 	CreditPage creditPage;
 	TestUtil testUtil;
 	String menu = "1";
+	String adminType;
 	String CreditLessThanError, CreditMoreThanError;
 	String SMACredit_initial, SMACredit_positive,SMACredit_negative,SMACredit_Alphabet;
+	String MACredit_initial, MACredit_positive, MACredit_negative01, MACredit_negative02, MACredit_Alphabet;
 	String TestSMA, TestMA, TestAG;
 	
 	public CreditPageTest(){
@@ -60,7 +62,15 @@ public class CreditPageTest extends TestBase{
 		SMACredit_positive = prop.getProperty("SMA_Credit_Positive");
 		SMACredit_negative = prop.getProperty("SMA_Credit_Negative");
 		SMACredit_Alphabet = prop.getProperty("SMA_Credit_Alpahbet");
+		MACredit_initial = prop.getProperty("MA_Initial_Credit");
+		MACredit_positive = prop.getProperty("MA_Credit_Positive");
+		MACredit_negative01 = prop.getProperty("MA_Credit_Negative01");
+		MACredit_negative02 = prop.getProperty("MA_Credit_Negative02");
+		MACredit_Alphabet = prop.getProperty("MA_Credit_Alpahbet");
 		TestSMA = prop.getProperty("SMA2");
+		TestMA = prop.getProperty("MA2");
+		TestAG = prop.getProperty("AG2");
+		adminType = prop.getProperty("AdminTypeS"); 
 	}
 	
 	
@@ -70,16 +80,14 @@ public class CreditPageTest extends TestBase{
 		context.setAttribute("Steps", "3");
 		context.setAttribute("Process1", "Test with SMA : " + TestSMA + " with credit Value : " + SMACredit_positive);
 		Thread.sleep(1000);
-		//String Rac = creditPage.getAvalCreditValue().replaceAll(",", "").toString();
-		//System.out.print("Check!!!!!!!!!!!!!" + Rac);
 		Long returnAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
 		Long resultGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
 		Long newCredit = Long.parseLong(SMACredit_positive.toString()); 
 		Long incrementPT = newCredit - resultGC;
 		Long expectAC = returnAC + incrementPT;
-		Thread.sleep(1000);
+		Thread.sleep(1500);
 		context.setAttribute("Process2", "Initial Available Credit Value : " + returnAC + " and Given Credit Value : " + resultGC);
-		String returnResult = creditPage.CreditUpdateTest(SMACredit_positive, "Yes");
+		String returnResult = creditPage.CreditUpdateTest(adminType, SMACredit_positive, "Yes");
 		Thread.sleep(1000);
 		String resultStatus = creditPage.getActivationStatus();
 		Long newAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
@@ -104,7 +112,7 @@ public class CreditPageTest extends TestBase{
 		Long expectAC = returnAC + incrementPT;
 		Thread.sleep(1500);
 		context.setAttribute("Process2", "Initial Available Credit Value : " + returnAC + " and Given Credit Value : " + resultGC);
-		String returnResult = creditPage.CreditUpdateTest(SMACredit_initial, "Yes");
+		String returnResult = creditPage.CreditUpdateTest(adminType,  SMACredit_initial, "Yes");
 		Thread.sleep(1000);
 		String resultStatus = creditPage.getActivationStatus();
 		Long newAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
@@ -121,12 +129,12 @@ public class CreditPageTest extends TestBase{
 		creditPage.searchBtnClick();
 		context.setAttribute("Steps", "3");
 		context.setAttribute("Process1", "Test with SMA : " + TestSMA + " with credit Value : " + SMACredit_negative);
-		Thread.sleep(1500);
+		Thread.sleep(2000);
 		Long returnAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
 		Long resultGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
 		Thread.sleep(1500);
 		context.setAttribute("Process2", "Initial Available Credit Value : " + returnAC + " and Given Credit Value : " + resultGC);
-		String returnResult = creditPage.CreditUpdateTest(SMACredit_negative, "Yes");
+		String returnResult = creditPage.CreditUpdateTest(adminType, SMACredit_negative, "Yes");
 		creditPage.backBtnClick();
 		Thread.sleep(1000);
 		String resultStatus = creditPage.getActivationStatus();
@@ -144,12 +152,12 @@ public class CreditPageTest extends TestBase{
 		creditPage.searchBtnClick();
 		context.setAttribute("Steps", "3");
 		context.setAttribute("Process1", "Test with SMA : " + TestSMA + " with credit Value : " + SMACredit_Alphabet);
-		Thread.sleep(1500);
+		Thread.sleep(2000);
 		Long returnAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
 		Long resultGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
 		Thread.sleep(1500);
 		context.setAttribute("Process2", "Initial Available Credit Value : " + returnAC + " and Given Credit Value : " + resultGC);
-		String returnResult = creditPage.CreditUpdateTest(SMACredit_Alphabet	, "Yes");
+		String returnResult = creditPage.CreditUpdateTest(adminType, SMACredit_Alphabet, "Yes");
 		creditPage.backBtnClick();
 		Thread.sleep(1000);
 		String resultStatus = creditPage.getActivationStatus();
@@ -160,6 +168,145 @@ public class CreditPageTest extends TestBase{
 		Assert.assertEquals("Yes",resultStatus);
 		Assert.assertEquals(newGC,resultGC);
 		Assert.assertEquals(newAC,returnAC);
+	}
+	
+	///////SMA Tier Test///////
+	
+	@Test(priority=5)
+	public void ProceedSMACheck() throws InterruptedException {
+		creditPage.downLineLinkClick();
+		Thread.sleep(1000);
+		creditPage.findTestingAccount(prop.getProperty("MA2"));
+		//Assert.assertEquals(newStatus,result);
+	}
+	
+	@Test(priority=6)
+	public void MA_Credit_Test_Positive01(ITestContext context) throws InterruptedException {
+		//creditPage.searchBtnClick();
+		context.setAttribute("Steps", "3");
+		context.setAttribute("Process1", "Test with MA : " + TestMA + " with credit Value : " + MACredit_positive);
+		Thread.sleep(1000);
+		Long returnAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
+		Long resultGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
+		Long newCredit = Long.parseLong(MACredit_positive.toString()); 
+		Long incrementPT = newCredit - resultGC;
+		Long expectAC = returnAC + incrementPT;
+		Thread.sleep(1000);
+		context.setAttribute("Process2", "Initial Available Credit Value : " + returnAC + " and Given Credit Value : " + resultGC);
+		String returnResult = creditPage.CreditUpdateTest(adminType, MACredit_positive, "Yes");
+		Thread.sleep(1000);
+		String resultStatus = creditPage.getDLActivationStatus();
+		Long newAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
+		Long newGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
+		context.setAttribute("Result", "Result expected value : ("+ prop.getProperty("Success_Message") +") and received value : (" + returnResult +")");
+		Assert.assertEquals(prop.getProperty("Success_Message"),returnResult);
+		Assert.assertEquals("Yes",resultStatus);	  
+		Assert.assertEquals(newGC,newCredit);
+		Assert.assertEquals(expectAC,newAC);
+	}
+	
+	@Test(priority=7)
+	public void MA_Credit_Test_Positive02(ITestContext context) throws InterruptedException {
+		creditPage.searchBtnClick();
+		context.setAttribute("Steps", "3");
+		context.setAttribute("Process1", "Test with MA : " + TestMA + " with credit Value : " + MACredit_initial);
+		Thread.sleep(1500);
+		Long returnAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
+		Long resultGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
+		Long newCredit = Long.parseLong(MACredit_initial.toString()); 
+		Long incrementPT = newCredit - resultGC;
+		Long expectAC = returnAC + incrementPT;
+		Thread.sleep(1500);
+		context.setAttribute("Process2", "Initial Available Credit Value : " + returnAC + " and Given Credit Value : " + resultGC);
+		String returnResult = creditPage.CreditUpdateTest(adminType, MACredit_initial, "Yes");
+		Thread.sleep(1000);
+		String resultStatus = creditPage.getDLActivationStatus();
+		Long newAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
+		Long newGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
+		context.setAttribute("Result", "Result expected value : ("+ prop.getProperty("Success_Message") +") and received value : (" + returnResult +")");
+		Assert.assertEquals(prop.getProperty("Success_Message"),returnResult);
+		Assert.assertEquals("Yes",resultStatus);
+		Assert.assertEquals(newGC,newCredit);
+		Assert.assertEquals(expectAC,newAC);
+	}
+	
+	@Test(priority=8)
+	public void MA_Credit_Test_Negative01(ITestContext context) throws InterruptedException {
+		creditPage.searchBtnClick();
+		context.setAttribute("Steps", "3");
+		context.setAttribute("Process1", "Test with MA : " + TestMA + " with credit Value : " + MACredit_negative01);
+		Thread.sleep(1500);
+		Long returnAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
+		Long resultGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
+		Thread.sleep(1500);
+		context.setAttribute("Process2", "Initial Available Credit Value : " + returnAC + " and Given Credit Value : " + resultGC);
+		String returnResult = creditPage.CreditUpdateTest(adminType, MACredit_negative01, "Yes");
+		creditPage.backBtnClick();
+		Thread.sleep(1000);
+		String resultStatus = creditPage.getDLActivationStatus();
+		Long newAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
+		Long newGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
+		context.setAttribute("Result", "Result expected value : ("+ prop.getProperty("Credit_morethan_available") +") and received value : (" + returnResult +")");
+		Assert.assertEquals(prop.getProperty("Credit_morethan_available"),returnResult);
+		Assert.assertEquals("Yes",resultStatus);
+		Assert.assertEquals(newGC,resultGC);
+		Assert.assertEquals(newAC,returnAC);
+	}
+	
+	@Test(priority=9)
+	public void MA_Credit_Test_Negative02(ITestContext context) throws InterruptedException {
+		creditPage.searchBtnClick();
+		context.setAttribute("Steps", "3");
+		context.setAttribute("Process1", "Test with MA : " + TestMA + " with credit Value : " + MACredit_negative02);
+		Thread.sleep(1500);
+		Long returnAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
+		Long resultGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
+		Thread.sleep(1500);
+		context.setAttribute("Process2", "Initial Available Credit Value : " + returnAC + " and Given Credit Value : " + resultGC);
+		String returnResult = creditPage.CreditUpdateTest(adminType, MACredit_negative02, "Yes");
+		creditPage.backBtnClick();
+		Thread.sleep(1000);
+		String resultStatus = creditPage.getDLActivationStatus();
+		Long newAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
+		Long newGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
+		context.setAttribute("Result", "Result expected value : ("+ prop.getProperty("Credit_lessthan_used") +") and received value : (" + returnResult +")");
+		Assert.assertEquals(prop.getProperty("Credit_lessthan_used"),returnResult);
+		Assert.assertEquals("Yes",resultStatus);
+		Assert.assertEquals(newGC,resultGC);
+		Assert.assertEquals(newAC,returnAC);
+	}
+	
+	@Test(priority=10)
+	public void MA_Credit_Test_Negative03(ITestContext context) throws InterruptedException {
+		creditPage.searchBtnClick();
+		context.setAttribute("Steps", "3");
+		context.setAttribute("Process1", "Test with MA : " + TestMA + " with credit Value : " + MACredit_Alphabet);
+		Thread.sleep(1500);
+		Long returnAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
+		Long resultGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
+		Thread.sleep(1500);
+		context.setAttribute("Process2", "Initial Available Credit Value : " + returnAC + " and Given Credit Value : " + resultGC);
+		String returnResult = creditPage.CreditUpdateTest(adminType, MACredit_Alphabet, "Yes");
+		creditPage.backBtnClick();
+		Thread.sleep(1000);
+		String resultStatus = creditPage.getDLActivationStatus();
+		Long newAC = Long.parseLong(creditPage.getAvalCreditValue().replaceAll(",", "").toString());
+		Long newGC = Long.parseLong(creditPage.getCreditValue().replaceAll(",", "").toString()); 
+		context.setAttribute("Result", "Result expected value : ("+ prop.getProperty("Credit_lessthan_used") +") and received value : (" + returnResult +")");
+		Assert.assertEquals(prop.getProperty("Credit_lessthan_used"),returnResult);
+		Assert.assertEquals("Yes",resultStatus);
+		Assert.assertEquals(newGC,resultGC);
+		Assert.assertEquals(newAC,returnAC);
+	}
+	
+	///////MA Tier Test///////
+	
+	@Test(priority=11)
+	public void ProceedMACheck() throws InterruptedException {
+		creditPage.downLineLinkClick();
+		Thread.sleep(1000);
+		creditPage.findTestingAccount(prop.getProperty("AG2"));
+		//Assert.assertEquals(newStatus,result);
 	}
 
 

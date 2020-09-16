@@ -8,9 +8,18 @@
     <classes>
       <class name="AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest">
         <methods>
+          <include name="MA_Credit_Test_Negative03"/>
           <include name="tearDown"/>
+          <include name="SMA_Credit_Test_Negative02"/>
+          <include name="MA_Credit_Test_Positive01"/>
+          <include name="SMA_Credit_Test_Positive02"/>
           <include name="setUp"/>
-          <include name="SMA_Credit_Test_Negative01" invocation-numbers="0"/>
+          <include name="MA_Credit_Test_Positive02"/>
+          <include name="ProceedSMACheck"/>
+          <include name="SMA_Credit_Test_Negative01"/>
+          <include name="SMA_Credit_Test_Positive01"/>
+          <include name="MA_Credit_Test_Negative02"/>
+          <include name="MA_Credit_Test_Negative01"/>
         </methods>
       </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest -->
     </classes>

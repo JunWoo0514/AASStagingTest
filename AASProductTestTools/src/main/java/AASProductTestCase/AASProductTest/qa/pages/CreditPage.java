@@ -24,7 +24,7 @@ public class CreditPage extends TestBase {
 		
 		//Check Field Element
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[2]/a") 
-		WebElement MAclick;
+		WebElement downlineClick;
 		
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[5]") 
 		WebElement checkCredit;
@@ -34,6 +34,9 @@ public class CreditPage extends TestBase {
 		
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[10]") 
 		WebElement checkWDStatus;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[9]") 
+		WebElement checkDLWDStatus;
 		
 		//Edit Button
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[4]/i") 
@@ -71,15 +74,17 @@ public class CreditPage extends TestBase {
 			filterBtn.click();
 		}
 		
-		public String CreditUpdateTest(String credit, String status) throws InterruptedException {
+		public String CreditUpdateTest(String tier, String credit, String status) throws InterruptedException {
 			
 			Thread.sleep(1000);
 			editBtn.click();
 			editCredit.clear();
 			editCredit.sendKeys(credit);
-			this.selectStatus(status);
+			if(tier.equals("SUPER")) {
+				this.selectStatus(status);
+			}
 			saveBtn.click();
-			Thread.sleep(1000);		
+			Thread.sleep(2000);		
 			String updateResult = driver.switchTo().alert().getText();
 			Thread.sleep(1500);	
 			driver.switchTo().alert().accept();
@@ -94,6 +99,10 @@ public class CreditPage extends TestBase {
 			backBtn.click();
 		}
 		
+		public void downLineLinkClick() {
+			downlineClick.click();
+		}
+
 		public void selectStatus(String NewStatus) {
 			Select activeStat = new Select(WDStatus);	
 			activeStat.selectByVisibleText(NewStatus);
@@ -104,16 +113,18 @@ public class CreditPage extends TestBase {
 			return returnStat;
 		}
 		
+		public String getDLActivationStatus() {
+			String returnStat = checkDLWDStatus.getText().toString();;
+			return returnStat;
+		}
+		
 		public String getCreditValue() {
 			String creditString = checkCredit.getText().toString();
-			//long returnCredit = Long.parseLong(creditString.replaceAll(",", "").toString()); 
-			return creditString.replaceAll(",", "").toString();
+			return creditString;
 		}
 		
 		public String getAvalCreditValue() {
 			String creditString = checkAvalCredit.getText().toString();
-			System.out.print("Check2222222!   " + creditString);
-			//long returnCredit = Long.parseLong(creditString.replaceAll(",", "").toString()); 
 			return creditString	;
 		}
 
