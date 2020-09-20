@@ -1,127 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-13T17:24:49Z" name="AAS Credit Test Suite" finished-at="2020-09-13T17:26:24Z" duration-ms="95356">
+  <suite started-at="2020-09-20T17:36:44Z" name="AAS Account List Test Suite" finished-at="2020-09-20T17:38:02Z" duration-ms="77885">
     <groups>
     </groups>
-    <test started-at="2020-09-13T17:24:49Z" name="AAS Credit Test" finished-at="2020-09-13T17:26:24Z" duration-ms="95356">
-      <class name="AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:24:49Z" name="setUp" finished-at="2020-09-14T01:25:00Z" duration-ms="10813" status="PASS">
+    <test started-at="2020-09-20T17:36:44Z" name="AAS Account List Test" finished-at="2020-09-20T17:38:02Z" duration-ms="77885">
+      <class name="AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:36:44Z" name="setUp" finished-at="2020-09-21T01:36:52Z" duration-ms="7754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SMA_Credit_Test_Positive01(org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:25:00Z" name="SMA_Credit_Test_Positive01" finished-at="2020-09-14T01:25:08Z" duration-ms="8373" status="PASS">
+        <test-method signature="AccountListStatusFilterTest(org.testng.ITestContext)[pri:1, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:36:52Z" name="AccountListStatusFilterTest" finished-at="2020-09-21T01:37:01Z" duration-ms="8926" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1de6932a]]>
+                <![CDATA[org.testng.TestRunner@6c796cc1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SMA_Credit_Test_Positive01 -->
-        <test-method signature="SMA_Credit_Test_Positive02(org.testng.ITestContext)[pri:2, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:25:08Z" name="SMA_Credit_Test_Positive02" finished-at="2020-09-14T01:25:17Z" duration-ms="8870" status="PASS">
+        </test-method> <!-- AccountListStatusFilterTest -->
+        <test-method signature="SMA_Filter(org.testng.ITestContext)[pri:2, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:37:01Z" name="SMA_Filter" finished-at="2020-09-21T01:37:04Z" duration-ms="3124" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1de6932a]]>
+                <![CDATA[org.testng.TestRunner@6c796cc1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SMA_Credit_Test_Positive02 -->
-        <test-method signature="SMA_Credit_Test_Negative01(org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:25:17Z" name="SMA_Credit_Test_Negative01" finished-at="2020-09-14T01:25:26Z" duration-ms="9402" status="PASS">
+        </test-method> <!-- SMA_Filter -->
+        <test-method signature="AccountListUpdateTestSMA01(org.testng.ITestContext)[pri:3, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:37:04Z" name="AccountListUpdateTestSMA01" finished-at="2020-09-21T01:37:13Z" duration-ms="8709" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1de6932a]]>
+                <![CDATA[org.testng.TestRunner@6c796cc1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SMA_Credit_Test_Negative01 -->
-        <test-method signature="SMA_Credit_Test_Negative02(org.testng.ITestContext)[pri:4, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:25:26Z" name="SMA_Credit_Test_Negative02" finished-at="2020-09-14T01:25:36Z" duration-ms="9384" status="PASS">
+        </test-method> <!-- AccountListUpdateTestSMA01 -->
+        <test-method signature="AccountListUpdateTestSMA02(org.testng.ITestContext)[pri:4, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:37:13Z" name="AccountListUpdateTestSMA02" finished-at="2020-09-21T01:37:21Z" duration-ms="8549" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1de6932a]]>
+                <![CDATA[org.testng.TestRunner@6c796cc1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SMA_Credit_Test_Negative02 -->
-        <test-method signature="ProceedSMACheck()[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:25:36Z" name="ProceedSMACheck" finished-at="2020-09-14T01:25:40Z" duration-ms="4430" status="PASS">
+        </test-method> <!-- AccountListUpdateTestSMA02 -->
+        <test-method signature="AccountListUpdateTestSMANegative01(org.testng.ITestContext)[pri:5, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:37:21Z" name="AccountListUpdateTestSMANegative01" finished-at="2020-09-21T01:37:30Z" duration-ms="8407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6c796cc1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountListUpdateTestSMANegative01 -->
+        <test-method signature="AccountListUpdateTestSMANegative02(org.testng.ITestContext)[pri:6, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:37:30Z" name="AccountListUpdateTestSMANegative02" finished-at="2020-09-21T01:37:38Z" duration-ms="8524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6c796cc1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountListUpdateTestSMANegative02 -->
+        <test-method signature="ProceedSMACheck(org.testng.ITestContext)[pri:7, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:37:38Z" name="ProceedSMACheck" finished-at="2020-09-21T01:37:44Z" duration-ms="6049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6c796cc1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProceedSMACheck -->
-        <test-method signature="MA_Credit_Test_Positive01(org.testng.ITestContext)[pri:6, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:25:40Z" name="MA_Credit_Test_Positive01" finished-at="2020-09-14T01:25:48Z" duration-ms="7925" status="PASS">
+        <test-method signature="AccountListUpdateTestMA01(org.testng.ITestContext)[pri:8, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:37:44Z" name="AccountListUpdateTestMA01" finished-at="2020-09-21T01:37:53Z" duration-ms="8673" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1de6932a]]>
+                <![CDATA[org.testng.TestRunner@6c796cc1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MA_Credit_Test_Positive01 -->
-        <test-method signature="MA_Credit_Test_Positive02(org.testng.ITestContext)[pri:7, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:25:48Z" name="MA_Credit_Test_Positive02" finished-at="2020-09-14T01:25:57Z" duration-ms="8903" status="PASS">
+        </test-method> <!-- AccountListUpdateTestMA01 -->
+        <test-method signature="AccountListUpdateTestMA02(org.testng.ITestContext)[pri:9, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:37:53Z" name="AccountListUpdateTestMA02" finished-at="2020-09-21T01:38:02Z" duration-ms="8525" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1de6932a]]>
+                <![CDATA[org.testng.TestRunner@6c796cc1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MA_Credit_Test_Positive02 -->
-        <test-method signature="MA_Credit_Test_Negative01(org.testng.ITestContext)[pri:8, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:25:57Z" name="MA_Credit_Test_Negative01" finished-at="2020-09-14T01:26:06Z" duration-ms="8874" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1de6932a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MA_Credit_Test_Negative01 -->
-        <test-method signature="MA_Credit_Test_Negative02(org.testng.ITestContext)[pri:9, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:26:06Z" name="MA_Credit_Test_Negative02" finished-at="2020-09-14T01:26:15Z" duration-ms="8877" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1de6932a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MA_Credit_Test_Negative02 -->
-        <test-method signature="MA_Credit_Test_Negative03(org.testng.ITestContext)[pri:10, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:26:15Z" name="MA_Credit_Test_Negative03" finished-at="2020-09-14T01:26:24Z" duration-ms="8876" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1de6932a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MA_Credit_Test_Negative03 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest@9597028]" started-at="2020-09-14T01:26:24Z" name="tearDown" finished-at="2020-09-14T01:26:24Z" duration-ms="605" status="PASS">
+        </test-method> <!-- AccountListUpdateTestMA02 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest@49139829]" started-at="2020-09-21T01:38:02Z" name="tearDown" finished-at="2020-09-21T01:38:02Z" duration-ms="618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.CreditPageTest -->
-    </test> <!-- AAS Credit Test -->
-  </suite> <!-- AAS Credit Test Suite -->
-  <suite started-at="2020-09-13T17:26:24Z" name="AAS Product Test Suite" finished-at="2020-09-13T17:26:24Z" duration-ms="0">
+      </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.AccountListPageTest -->
+    </test> <!-- AAS Account List Test -->
+  </suite> <!-- AAS Account List Test Suite -->
+  <suite started-at="2020-09-20T17:38:03Z" name="AAS Product Test Suite" finished-at="2020-09-20T17:38:03Z" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- AAS Product Test Suite -->

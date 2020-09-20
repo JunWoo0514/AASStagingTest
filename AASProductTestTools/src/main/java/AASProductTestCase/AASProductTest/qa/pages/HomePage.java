@@ -98,5 +98,10 @@ public class HomePage extends TestBase{
 		creditMenu.click();
 		return new CreditPage();
 	}
+	
+	public AccountListPage clickOnAccountList() {
+		accountListMenu.click();
+		return new AccountListPage();
+	}
 
 }
