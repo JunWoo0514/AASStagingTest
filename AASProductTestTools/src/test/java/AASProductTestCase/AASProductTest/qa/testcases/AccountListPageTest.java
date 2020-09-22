@@ -239,6 +239,125 @@ public class AccountListPageTest extends TestBase{
 		Assert.assertNotEquals(initName,newName);
 		Assert.assertNotEquals(initMemo,newMemo);
 	}
+	
+	@Test(priority=10)
+	public void AccountListUpdateTestMANegative01(ITestContext context) throws InterruptedException {
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process1", "Test with MA : " + TestMA  + " with Invalid Password : " + invalidPassword1);
+		Thread.sleep(1000);
+		String returnResult = accountListPage.AccountUpdateTest("MA", invalidPassword1, name, memo, "Open");
+		accountListPage.backBtnClick("MA");
+		Thread.sleep(2000);
+		context.setAttribute("Result", "Result expected value : ("+ prop.getProperty("Alph_Password_error") +") and received value : (" + returnResult +")");
+		Assert.assertEquals(prop.getProperty("Alph_Password_error"),returnResult);
+	}  
+	
+	@Test(priority=11)
+	public void AccountListUpdateTestMANegative02(ITestContext context) throws InterruptedException {
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process1", "Test with MA : " + TestMA  + " with Invalid Password : " + invalidPassword2);
+		Thread.sleep(1000);
+		String returnResult = accountListPage.AccountUpdateTest("MA", invalidPassword2, name, memo, "Open");
+		accountListPage.backBtnClick("MA");
+		Thread.sleep(2000);
+		context.setAttribute("Result", "Result expected value : ("+ prop.getProperty("Length_Password_error") +") and received value : (" + returnResult +")");
+		Assert.assertEquals(prop.getProperty("Length_Password_error"),returnResult);
+	}  
+	
+	
+	///////AG Tier Test///////
+	
+	@Test(priority=12)
+	public void ProceedMACheck(ITestContext context) throws InterruptedException {
+		accountListPage.downLineLinkClick();
+		Thread.sleep(1000);
+		String AllAccountCount = accountListPage.getAccountCount("All");
+		accountListPage.findTestingAccount(TestAG);
+		context.setAttribute("Steps", "1");
+		context.setAttribute("Process", "Filter with account : ."+TestAG);
+	}
+	
+	@Test(priority=13)
+	public void AccountListUpdateTestAG01(ITestContext context) throws InterruptedException {
+		context.setAttribute("Steps", "3");
+		context.setAttribute("Process1", "Test with AG : " + TestAG + " with all close status.");
+		Thread.sleep(1000);
+		initStatus = accountListPage.getAccountStatus("AG");
+		initSuspend = accountListPage.getSuspendStatus("AG");
+		initLock = accountListPage.getLockStatus("AG");
+		initName = accountListPage.getName("AG");
+		initMemo = accountListPage.getMemo("AG");
+		context.setAttribute("Process2", "Initial Status: " + initStatus + ", Initial Suspend Status : " + initSuspend
+							+ ", Initial Lock Status : " + initLock + ", Initial Name : " + initName + ", Initial Memo : " + initMemo);
+		String returnResult = accountListPage.AccountUpdateTest("AG", initPassword, name, memo, "Close");
+		Thread.sleep(2000);
+		newStatus = accountListPage.getAccountStatus("AG");
+		newSuspend = accountListPage.getSuspendStatus("AG");
+		newLock = accountListPage.getLockStatus("AG");
+		newName = accountListPage.getName("AG");
+		newMemo = accountListPage.getMemo("AG");
+		context.setAttribute("Result", "Return Status: " + newStatus + ", Return Suspend Status : " + newSuspend
+				+ ", Return Lock Status : " + newLock + ", Return Name : " + newName + ", Return Memo : " + newMemo);
+		Assert.assertEquals(prop.getProperty("Success_Message"),returnResult);
+		Assert.assertEquals("Closed",newStatus);
+		Assert.assertEquals("Yes",newSuspend);
+		Assert.assertEquals("Yes",newLock);
+		Assert.assertNotEquals(initName,newName);
+		Assert.assertNotEquals(initMemo,newMemo);
+	}
+	
+	@Test(priority=14)
+	public void AccountListUpdateTestAG02(ITestContext context) throws InterruptedException {
+		context.setAttribute("Steps", "3");
+		context.setAttribute("Process1", "Test with AG : " + TestMA + " with all close status.");
+		Thread.sleep(1000);
+		initStatus = accountListPage.getAccountStatus("AG");
+		initSuspend = accountListPage.getSuspendStatus("AG");
+		initLock = accountListPage.getLockStatus("AG");
+		initName = accountListPage.getName("AG");
+		initMemo = accountListPage.getMemo("AG");
+		context.setAttribute("Process2", "Initial Status: " + initStatus + ", Initial Suspend Status : " + initSuspend
+							+ ", Initial Lock Status : " + initLock + ", Initial Name : " + initName + ", Initial Memo : " + initMemo);
+		String returnResult = accountListPage.AccountUpdateTest("AG", password, name, memo, "Open");
+		Thread.sleep(2000);
+		newStatus = accountListPage.getAccountStatus("AG");
+		newSuspend = accountListPage.getSuspendStatus("AG");
+		newLock = accountListPage.getLockStatus("AG");
+		newName = accountListPage.getName("AG");
+		newMemo = accountListPage.getMemo("AG");
+		context.setAttribute("Result", "Return Status: " + newStatus + ", Return Suspend Status : " + newSuspend
+				+ ", Return Lock Status : " + newLock + ", Return Name : " + newName + ", Return Memo : " + newMemo);
+		Assert.assertEquals(prop.getProperty("Success_Message"),returnResult);
+		Assert.assertEquals("Open",newStatus);
+		Assert.assertEquals("No",newSuspend);
+		Assert.assertEquals("No",newLock);
+		Assert.assertNotEquals(initName,newName);
+		Assert.assertNotEquals(initMemo,newMemo);
+	}
+	
+	@Test(priority=15)
+	public void AccountListUpdateTestAGNegative01(ITestContext context) throws InterruptedException {
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process1", "Test with MA : " + TestAG  + " with Invalid Password : " + invalidPassword1);
+		Thread.sleep(1000);
+		String returnResult = accountListPage.AccountUpdateTest("AG", invalidPassword1, name, memo, "Open");
+		accountListPage.backBtnClick("AG");
+		Thread.sleep(2000);
+		context.setAttribute("Result", "Result expected value : ("+ prop.getProperty("Alph_Password_error") +") and received value : (" + returnResult +")");
+		Assert.assertEquals(prop.getProperty("Alph_Password_error"),returnResult);
+	}  
+	
+	@Test(priority=16)
+	public void AccountListUpdateTestAGNegative02(ITestContext context) throws InterruptedException {
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process1", "Test with MA : " + TestAG  + " with Invalid Password : " + invalidPassword2);
+		Thread.sleep(1000);
+		String returnResult = accountListPage.AccountUpdateTest("AG", invalidPassword2, name, memo, "Open");
+		accountListPage.backBtnClick("AG");
+		Thread.sleep(2000);
+		context.setAttribute("Result", "Result expected value : ("+ prop.getProperty("Length_Password_error") +") and received value : (" + returnResult +")");
+		Assert.assertEquals(prop.getProperty("Length_Password_error"),returnResult);
+	}  
 
 
 	@AfterClass
