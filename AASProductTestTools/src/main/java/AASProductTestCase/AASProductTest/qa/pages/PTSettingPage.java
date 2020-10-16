@@ -39,7 +39,7 @@ public class PTSettingPage extends TestBase {
 		@FindBy(xpath="//select[contains(@name,'bg_pt')]") 
 		WebElement bgPTSelect;
 		
-		@FindBy(xpath="//select[contains(@name,'titanium_pt')]") 
+		@FindBy(xpath="//select[contains(@name,'mg_t_pt')]") 
 		WebElement mgPTSelect;
 		
 		@FindBy(xpath="//select[contains(@name,'asg_pt')]") 

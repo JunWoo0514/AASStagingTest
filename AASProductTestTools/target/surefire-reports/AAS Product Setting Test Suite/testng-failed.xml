@@ -8,9 +8,12 @@
     <classes>
       <class name="AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest">
         <methods>
-          <include name="PTSettingSMAPositiveTest01" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14"/>
+          <include name="PTSettingMANegativeTest01" invocation-numbers="0 1 2 3 4 5 7 8 9 10 11 12 13 14"/>
+          <include name="PTSettingMAPositiveTest01" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14"/>
+          <include name="PTSettingSMAPositiveTest01" invocation-numbers="6"/>
           <include name="tearDown"/>
-          <include name="PTSettingCAPositiveTest01" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14"/>
+          <include name="PTSettingCAPositiveTest01" invocation-numbers="6"/>
+          <include name="PTSettingMAPositiveTest02" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest -->

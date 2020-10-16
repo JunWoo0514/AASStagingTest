@@ -1,4 +1,188 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 137.4 s - in TestSuite
+Tests run: 200, Failures: 46, Errors: 0, Skipped: 0, Time elapsed: 706.154 s <<< FAILURE! - in TestSuite
+PTSettingCAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 5.364 s  <<< FAILURE!
+java.lang.AssertionError: expected [70] but found [50.5]
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingCAPositiveTest01(PTSettingPageTest.java:112)
+
+PTSettingSMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.988 s  <<< FAILURE!
+java.lang.AssertionError: expected [50] but found [20.5]
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingSMAPositiveTest01(PTSettingPageTest.java:225)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 5.083 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.966 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.95 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.984 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.968 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.981 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 5.004 s  <<< FAILURE!
+java.lang.AssertionError: expected [20] but found [30.5]
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:338)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 0.359 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:324)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.971 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 5.017 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.984 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.985 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.975 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.956 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMAPositiveTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.961 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest01(PTSettingPageTest.java:331)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.98 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.992 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 5.028 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.981 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 5.019 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.984 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 0.336 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:344)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.969 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.954 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.956 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.957 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 5.027 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 4.973 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMANegativeTest01(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 5.097 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 4
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMANegativeTest01(PTSettingPageTest.java:351)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.393 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.336 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.334 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.357 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.349 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.343 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.359 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.354 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.336 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.333 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.332 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.358 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.342 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.333 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
+PTSettingMAPositiveTest02(AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest)  Time elapsed: 1.341 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end -2, length 2
+	at AASProductTestCase.AASProductTest.qa.testcases.PTSettingPageTest.PTSettingMAPositiveTest02(PTSettingPageTest.java:376)
+
