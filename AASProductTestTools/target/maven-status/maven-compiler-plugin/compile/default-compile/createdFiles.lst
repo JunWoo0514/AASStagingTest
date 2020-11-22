@@ -5,6 +5,8 @@ AASProductTestCase\AASProductTest\qa\base\DriverManagerFactory$1.class
 AASProductTestCase\AASProductTest\qa\base\DriverType.class
 AASProductTestCase\AASProductTest\qa\pages\ExtraPTPage.class
 AASProductTestCase\AASProductTest\qa\pages\ProductSettingPage.class
+AASProductTestCase\AASProductTest\qa\pages\AccountListPage.class
+AASProductTestCase\AASProductTest\qa\pages\CreditPage.class
 AASProductTestCase\AASProductTest\qa\pages\AgActivationPage.class
 AASProductTestCase\AASProductTest\qa\ExtentReportListener\TestListeners.class
 AASProductTestCase\AASProductTest\qa\base\ChromeDriverManager.class

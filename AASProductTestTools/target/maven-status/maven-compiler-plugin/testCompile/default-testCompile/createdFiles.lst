@@ -2,6 +2,8 @@ AASProductTestCase\AASProductTest\qa\testcases\ExtraPTPageTest.class
 AASProductTestCase\AASProductTest\qa\testcases\PTSettingPageTest.class
 AASProductTestCase\AASProductTest\qa\testcases\LoginPageTest.class
 AASProductTestCase\AASProductTest\qa\testcases\ProductSkinPageTest.class
+AASProductTestCase\AASProductTest\qa\testcases\AccountListPageTest.class
 AASProductTestCase\AASProductTest\qa\testcases\AgActivationPageTest.class
+AASProductTestCase\AASProductTest\qa\testcases\CreditPageTest.class
 AASProductTestCase\AASProductTest\qa\testcases\HomePageTest.class
 AASProductTestCase\AASProductTest\qa\testcases\ProductSettingPageTest.class

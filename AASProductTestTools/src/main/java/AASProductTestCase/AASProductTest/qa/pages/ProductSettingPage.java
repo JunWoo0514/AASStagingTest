@@ -75,6 +75,11 @@ public class ProductSettingPage extends TestBase {
 		@FindBy(xpath="//select[contains(@name,'png_status')]") 
 		WebElement pngStatusSelect;
 		
+		@FindBy(xpath="//select[contains(@name,'wm_status')]") 
+		WebElement wmStatusSelect;
+
+		@FindBy(xpath="//select[contains(@name,'im_status')]") 
+		WebElement imStatusSelect;
 		//@FindBy(xpath="//select[contains(@name,'sg_status')]") 
 		//WebElement sgStatusSelect;
 		//change to get Xpath 
@@ -127,6 +132,12 @@ public class ProductSettingPage extends TestBase {
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[19]/font") 
 		WebElement PngStatus;
 		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[20]/font") 
+		WebElement WmStatus;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[21]/font") 
+		WebElement ImStatus;
+		
 		//Apply Button
 		@FindBy(id="btnSubmit") 
 		WebElement submitBtn;
@@ -156,7 +167,7 @@ public class ProductSettingPage extends TestBase {
 			driver.switchTo().alert().accept();
 		}
 		
-		public void ProductStatusActiveTest(String NewStatus) throws InterruptedException {
+		public void ProductStatusGroupTest(String NewStatus) throws InterruptedException {
 			
 			Thread.sleep(1000);	
 			accountBox.click();
@@ -191,6 +202,8 @@ public class ProductSettingPage extends TestBase {
 			Select qsSelect = new Select(qsStatusSelect);
 			Select sgSelect = new Select(sgStatusSelect2);
 			Select pngSelect = new Select(pngStatusSelect);
+			Select wmSelect = new Select(wmStatusSelect);
+			Select imSelect = new Select(imStatusSelect);
 
 			switch (prdID) {
 				case "1":
@@ -238,6 +251,12 @@ public class ProductSettingPage extends TestBase {
 				case "15":
 					pngSelect.selectByVisibleText(NewStatus);	
 					break;
+				case "16":
+					wmSelect.selectByVisibleText(NewStatus);	
+					break;
+				case "17":
+					imSelect.selectByVisibleText(NewStatus);	
+					break;
 			}
 		}
 		
@@ -259,6 +278,8 @@ public class ProductSettingPage extends TestBase {
 			Select qsSelect = new Select(qsStatusSelect);
 			Select sgSelect = new Select(sgStatusSelect2);
 			Select pngSelect = new Select(pngStatusSelect);
+			Select wmSelect = new Select(wmStatusSelect);
+			Select imSelect = new Select(imStatusSelect);
 			
 			evoSelect.selectByVisibleText(NewStatus);	
 			bgSelect.selectByVisibleText(NewStatus);	
@@ -275,6 +296,8 @@ public class ProductSettingPage extends TestBase {
 			qsSelect.selectByVisibleText(NewStatus);	
 			sgSelect.selectByVisibleText(NewStatus);	
 			pngSelect.selectByVisibleText(NewStatus);
+			wmSelect.selectByVisibleText(NewStatus);	
+			imSelect.selectByVisibleText(NewStatus);
 		}
 		
 		public String getStatusResult(String PrdID){
@@ -326,6 +349,12 @@ public class ProductSettingPage extends TestBase {
 				break;
 			case "15":
 				newStat = PngStatus.getText();
+				break;
+			case "16":
+				newStat = WmStatus.getText();
+				break;
+			case "17":
+				newStat = ImStatus.getText();
 				break;
 			}	
 			

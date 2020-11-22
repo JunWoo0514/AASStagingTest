@@ -88,6 +88,29 @@ public class ProductSettingPageTest extends TestBase{
 	}
 	
 	@Test(priority=2)
+	public void ProductSettingSMAGroupUpdate(ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("active");
+		productSettingPage.findTestingAccount(prop.getProperty("SMA2"));
+		Thread.sleep(1000);
+		
+		context.setAttribute("Steps", "1");
+		context.setAttribute("Process", "SMA Tier Test All Product with status Value : " + newStatus);
+		productSettingPage.ProductStatusGroupTest(newStatus);
+		Thread.sleep(1000);
+	}
+	
+	@Test(priority=3, dataProvider = "getProductListeData")
+	public void SMAProductStatusGroupActiveTest(String prdID, String productName, ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("active");
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "SMA Tier Check on Product : " + productName + " with Status Value : " + newStatus);		
+		Thread.sleep(2000);
+		String result = productSettingPage.getStatusResult(prdID);
+		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
+		Assert.assertEquals(newStatus,result);
+	}
+	
+	@Test(priority=4)
 	public void ProceedMACheck() throws InterruptedException {
 		productSettingPage.DownlineClick();
 		Thread.sleep(1000);
@@ -95,7 +118,7 @@ public class ProductSettingPageTest extends TestBase{
 		//Assert.assertEquals(newStatus,result);
 	}
 	
-	@Test(priority=3, dataProvider = "getProductListeData")
+	@Test(priority=5, dataProvider = "getProductListeData")
 	public void ProductStatusDownlineCheck_MA(String prdID, String productName, ITestContext context) throws InterruptedException {
 		String newStatus = prop.getProperty("disable");
 		context.setAttribute("Steps", "2");
@@ -106,7 +129,29 @@ public class ProductSettingPageTest extends TestBase{
 		Assert.assertEquals(newStatus,result);
 	}
 	
-	@Test(priority=4)
+	@Test(priority=6)
+	public void ProductSettingMAGroupUpdate(ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("active");
+		productSettingPage.findTestingAccount(prop.getProperty("MA2"));
+		Thread.sleep(1000);
+		context.setAttribute("Steps", "1");
+		context.setAttribute("Process", "MA Tier Test All Product with status Value : " + newStatus);
+		productSettingPage.ProductStatusGroupTest(newStatus);
+		Thread.sleep(1000);
+	}
+	
+	@Test(priority=7, dataProvider = "getProductListeData")
+	public void MAProductStatusGroupActiveTest(String prdID, String productName, ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("active");
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "MA Tier Check on Product : " + productName + " with Status Value : " + newStatus);		
+		Thread.sleep(2000);
+		String result = productSettingPage.getStatusResult(prdID);
+		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
+		Assert.assertEquals(newStatus,result);
+	}
+	
+	@Test(priority=8)
 	public void ProceedAGCheck() throws InterruptedException {
 		productSettingPage.DownlineClick();
 		Thread.sleep(1000);
@@ -114,7 +159,7 @@ public class ProductSettingPageTest extends TestBase{
 		//Assert.assertEquals(newStatus,result);
 	}
 	
-	@Test(priority=5, dataProvider = "getProductListeData")
+	@Test(priority=9, dataProvider = "getProductListeData")
 	public void ProductStatusDownlineCheck_AG(String prdID, String productName, ITestContext context) throws InterruptedException {
 		String newStatus = prop.getProperty("disable");
 		context.setAttribute("Steps", "2");
@@ -125,7 +170,29 @@ public class ProductSettingPageTest extends TestBase{
 		Assert.assertEquals(newStatus,result);
 	}
 	
-	@Test(priority=6)
+	@Test(priority=10)
+	public void ProductSettingAGroupUpdate(ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("active");
+		productSettingPage.findTestingAccount(prop.getProperty("AG2"));
+		Thread.sleep(1000);
+		context.setAttribute("Steps", "1");
+		context.setAttribute("Process", "AG Tier Test All Product with status Value : " + newStatus);
+		productSettingPage.ProductStatusGroupTest(newStatus);
+		Thread.sleep(1000);
+	}
+	
+	@Test(priority=11, dataProvider = "getProductListeData")
+	public void AGProductStatusGroupActiveTest(String prdID, String productName, ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("active");
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "AG Tier Check on Product : " + productName + " with Status Value : " + newStatus);		
+		Thread.sleep(2000);
+		String result = productSettingPage.getStatusResult(prdID);
+		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
+		Assert.assertEquals(newStatus,result);
+	}
+	
+	/*@Test(priority=6)
 	public void ProceedProductStatusActiveTest(ITestContext context) throws InterruptedException {
 		productSettingPage.CABreadCrumbClick();
 		productSettingPage.findTestingAccount(prop.getProperty("SMA2"));
@@ -146,7 +213,7 @@ public class ProductSettingPageTest extends TestBase{
 		String result = productSettingPage.getStatusResult(prdID);
 		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
 		Assert.assertEquals(newStatus,result);
-	}
+	}*/
 
 	@AfterClass
 	public void tearDown(){
