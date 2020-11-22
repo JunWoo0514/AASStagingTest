@@ -49,6 +49,14 @@ public class ProductSkinPageTest extends TestBase{
 			{"2",high},
 			{"2",medium},
 			{"2",low},
+			{"3",vhigh},
+			{"3",high},
+			{"3",medium},
+			{"3",low},
+			{"4",vhigh},
+			{"4",high},
+			{"4",medium},
+			{"4",low},
 		};
 	}
 

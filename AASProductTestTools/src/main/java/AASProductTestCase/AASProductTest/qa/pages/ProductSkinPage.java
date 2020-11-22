@@ -29,6 +29,12 @@ public class ProductSkinPage extends TestBase {
 		@FindBy(id="evoSkinIdList") 
 		WebElement EvoSkinSelect;
 		
+		@FindBy(id="bgSkinIdList") 
+		WebElement BgSkinSelect;
+		
+		@FindBy(id="dgSkinIdList") 
+		WebElement DgSkinSelect;
+		
 		@FindBy(id="avSkinIdList") 
 		WebElement AvSkinSelect;
 		
@@ -37,6 +43,12 @@ public class ProductSkinPage extends TestBase {
 		WebElement EvoSkin;
 		
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[5]") 
+		WebElement BgSkin;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[6]") 
+		WebElement DgSkin;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[7]") 
 		WebElement AvSkin;
 		
 		//Initializing the Page Objects:
@@ -65,7 +77,9 @@ public class ProductSkinPage extends TestBase {
 		}
 		
 		public void selectSkin(String prdID, String NewSkinValue) {
-			Select evoSkinSelect = new Select(EvoSkinSelect);	
+			Select evoSkinSelect = new Select(EvoSkinSelect);
+			Select bgSkinSelect = new Select(BgSkinSelect);	
+			Select dgSkinSelect = new Select(DgSkinSelect);	
 			Select avSkinSelect = new Select(AvSkinSelect);	
 
 			switch (prdID) {
@@ -73,6 +87,12 @@ public class ProductSkinPage extends TestBase {
 					evoSkinSelect.selectByVisibleText(NewSkinValue);	
 					break;
 				case "2":
+					bgSkinSelect.selectByVisibleText(NewSkinValue);	
+					break;
+				case "3":
+					dgSkinSelect.selectByVisibleText(NewSkinValue);	
+					break;
+				case "4":
 					avSkinSelect.selectByVisibleText(NewSkinValue);	
 					break;
 			}
@@ -87,6 +107,12 @@ public class ProductSkinPage extends TestBase {
 				newSKIN = EvoSkin.getText();
 				break;
 			case "2":
+				newSKIN = BgSkin.getText();
+				break;
+			case "3":
+				newSKIN = DgSkin.getText();
+				break;
+			case "4":
 				newSKIN = AvSkin.getText();
 				break;
 			}	
