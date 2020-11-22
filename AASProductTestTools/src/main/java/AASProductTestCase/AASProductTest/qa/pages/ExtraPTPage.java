@@ -75,6 +75,12 @@ public class ExtraPTPage extends TestBase{
 	
 	@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[18]") 
 	WebElement PNGPT;
+	
+	@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[19]") 
+	WebElement WMPT;
+	
+	@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[20]") 
+	WebElement IMPT;
 
 	//Select (Combo Box) Element
 	@FindBy(id="evo_pt") 
@@ -122,7 +128,11 @@ public class ExtraPTPage extends TestBase{
 	@FindBy(id="png_pt") 
 	WebElement PNGPTSelect;
 	
-
+	@FindBy(id="wm_pt") 
+	WebElement WMPTSelect;
+	
+	@FindBy(id="im_pt") 
+	WebElement IMPTSelect;
 
 	//Initializing the Page Objects:
 	public ExtraPTPage() {
@@ -191,6 +201,8 @@ public class ExtraPTPage extends TestBase{
 		Select qsPT = new Select(QSPTSelect);
 		Select sgPT = new Select(SGPTSelect);
 		Select pngPT = new Select(PNGPTSelect);
+		Select WMPT = new Select(WMPTSelect);
+		Select IMPT = new Select(IMPTSelect);
 		
 		
 		switch (prdID) {
@@ -238,7 +250,13 @@ public class ExtraPTPage extends TestBase{
 				break;
 			case "15":
 				pngPT.selectByVisibleText(PTValue);	
-				break;		
+				break;	
+			case "16":
+				pngPT.selectByVisibleText(PTValue);	
+				break;	
+			case "17":
+				pngPT.selectByVisibleText(PTValue);	
+				break;	
 		}
 	}
 	
@@ -258,6 +276,8 @@ public class ExtraPTPage extends TestBase{
 		Select qsPT = new Select(QSPTSelect);
 		Select sgPT = new Select(SGPTSelect);
 		Select pngPT = new Select(PNGPTSelect);
+		Select wmPT = new Select(PNGPTSelect);
+		Select imPT = new Select(PNGPTSelect);
 
 		evoPT.selectByVisibleText(PTValue);	
 		bgPT.selectByVisibleText(PTValue);	
@@ -274,6 +294,8 @@ public class ExtraPTPage extends TestBase{
 		qsPT.selectByVisibleText(PTValue);	
 		sgPT.selectByVisibleText(PTValue);	
 		pngPT.selectByVisibleText(PTValue);	
+		wmPT.selectByVisibleText(PTValue);	
+		imPT.selectByVisibleText(PTValue);	
 	}
 	
 	
@@ -326,6 +348,12 @@ public class ExtraPTPage extends TestBase{
 			break;	
 		case "15":
 			newPT = PNGPT.getText();
+			break;
+		case "16":
+			newPT = WMPT.getText();
+			break;
+		case "17":
+			newPT = IMPT.getText();
 			break;
 		}	
 		
