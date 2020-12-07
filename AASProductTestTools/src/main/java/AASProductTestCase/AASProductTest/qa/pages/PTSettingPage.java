@@ -75,6 +75,12 @@ public class PTSettingPage extends TestBase {
 		@FindBy(xpath="//select[contains(@name,'png_pt')]") 
 		WebElement pngPTSelect;
 		
+		@FindBy(xpath="//select[contains(@name,'wm_pt')]") 
+		WebElement wmPTSelect;
+		
+		@FindBy(xpath="//select[contains(@name,'im_pt')]") 
+		WebElement imPTSelect;
+		
 		//@FindBy(xpath="//select[contains(@name,'sg_status')]") 
 		//WebElement sgStatusSelect;
 		//change to get Xpath 
@@ -101,10 +107,10 @@ public class PTSettingPage extends TestBase {
 		WebElement AVGPT;
 		
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[17]") 
-		WebElement PPGPT;
+		WebElement SXGGPT;
 		
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[19]") 
-		WebElement SXGGPT;
+		WebElement PPGPT;
 		
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[21]") 
 		WebElement PPSGPT;
@@ -127,6 +133,12 @@ public class PTSettingPage extends TestBase {
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[33]") 
 		WebElement PNGGPT;
 		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[35]") 
+		WebElement WMGPT;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[37]") 
+		WebElement IMGPT;
+		
 		//Product Given PT Display Element (For AG Tier Use)
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[5]/text()") 
 		WebElement AGEvoGPT;
@@ -145,12 +157,12 @@ public class PTSettingPage extends TestBase {
 
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[15]/text()") 
 		WebElement AGAVGPT;
-
+		
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[17]/text()") 
-		WebElement AGPPGPT;
+		WebElement AGSXGGPT;
 
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[19]/text()") 
-		WebElement AGSXGGPT;
+		WebElement AGPPGPT;
 
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[21]/text()") 
 		WebElement AGPPSGPT;
@@ -173,6 +185,13 @@ public class PTSettingPage extends TestBase {
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[33]/text()") 
 		WebElement AGPNGGPT;
 		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[35]/text()") 
+		WebElement AGWMGPT;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[37]/text()") 
+		WebElement AGIMGPT;
+		
+		
 		//Product Eff PT Display Element
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[6]") 
 		WebElement EvoEPT;
@@ -193,10 +212,10 @@ public class PTSettingPage extends TestBase {
 		WebElement AVEPT;
 
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[18]") 
-		WebElement PPEPT;
-
-		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[20]") 
 		WebElement SXGEPT;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[20]") 
+		WebElement PPEPT;
 
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[22]") 
 		WebElement PPSEPT;
@@ -218,6 +237,12 @@ public class PTSettingPage extends TestBase {
 		
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[34]") 
 		WebElement PNGEPT;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[36]") 
+		WebElement WMEPT;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[38]") 
+		WebElement IMEPT;
 		
 		//Apply Button
 		@FindBy(id="btnSubmit") 
@@ -244,7 +269,7 @@ public class PTSettingPage extends TestBase {
 			accountBox.click();
 			this.selectPTSingle(prdID, NewPT);
 			submitBtn.click();
-			Thread.sleep(1000);			
+			Thread.sleep(1500);			
 			//driver.switchTo().alert().accept();
 		}
 		
@@ -254,7 +279,7 @@ public class PTSettingPage extends TestBase {
 			accountBox.click();
 			this.selectStatusALL(NewPT);
 			submitBtn.click();
-			Thread.sleep(1000);			
+			Thread.sleep(1500);			
 			//driver.switchTo().alert().accept();
 		}
 		
@@ -283,6 +308,8 @@ public class PTSettingPage extends TestBase {
 			Select qsSelect = new Select(qsPTSelect);
 			Select sgSelect = new Select(sgPTSelect2);
 			Select pngSelect = new Select(pngPTSelect);
+			Select wmSelect = new Select(wmPTSelect);
+			Select imSelect = new Select(imPTSelect);
 
 			switch (prdID) {
 				case "1":
@@ -304,10 +331,10 @@ public class PTSettingPage extends TestBase {
 					avSelect.selectByVisibleText(NewPT);	
 					break;
 				case "7":
-					ppSelect.selectByVisibleText(NewPT);	
+					sxgSelect.selectByVisibleText(NewPT);	
 					break;
 				case "8":
-					sxgSelect.selectByVisibleText(NewPT);	
+					ppSelect.selectByVisibleText(NewPT);	
 					break;
 				case "9":
 					ppsSelect.selectByVisibleText(NewPT);	
@@ -330,6 +357,12 @@ public class PTSettingPage extends TestBase {
 				case "15":
 					pngSelect.selectByVisibleText(NewPT);	
 					break;
+				case "16":
+					wmSelect.selectByVisibleText(NewPT);	
+					break;
+				case "17":
+					imSelect.selectByVisibleText(NewPT);	
+					break;
 			}
 		}
 		
@@ -351,6 +384,8 @@ public class PTSettingPage extends TestBase {
 			Select qsSelect = new Select(qsPTSelect);
 			Select sgSelect = new Select(sgPTSelect2);
 			Select pngSelect = new Select(pngPTSelect);
+			Select wmSelect = new Select(wmPTSelect);
+			Select imSelect = new Select(imPTSelect);
 			
 			evoSelect.selectByVisibleText(NewPT);	
 			bgSelect.selectByVisibleText(NewPT);	
@@ -367,6 +402,8 @@ public class PTSettingPage extends TestBase {
 			qsSelect.selectByVisibleText(NewPT);	
 			sgSelect.selectByVisibleText(NewPT);
 			pngSelect.selectByVisibleText(NewPT);	
+			wmSelect.selectByVisibleText(NewPT);
+			imSelect.selectByVisibleText(NewPT);	
 		}	
 		
 		public String getGivenPTResult(String PrdID){
@@ -393,10 +430,10 @@ public class PTSettingPage extends TestBase {
 				givenPT = AVGPT.getText();
 				break;
 			case "7":
-				givenPT = PPGPT.getText();
+				givenPT = SXGGPT.getText();
 				break;
 			case "8":
-				givenPT = SXGGPT.getText();
+				givenPT = PPGPT.getText();
 				break;
 			case "9":
 				givenPT = PPSGPT.getText();
@@ -418,6 +455,12 @@ public class PTSettingPage extends TestBase {
 				break;
 			case "15":
 				givenPT = PNGGPT.getText();
+				break;
+			case "16":
+				givenPT = WMGPT.getText();
+				break;
+			case "17":
+				givenPT = IMGPT.getText();
 				break;
 			
 			}	
@@ -455,10 +498,10 @@ public class PTSettingPage extends TestBase {
 				effPT = AVEPT.getText();
 				break;
 			case "7":
-				effPT = PPEPT.getText();
+				effPT = SXGEPT.getText();
 				break;
 			case "8":
-				effPT = SXGEPT.getText();
+				effPT = PPEPT.getText();
 				break;
 			case "9":
 				effPT = PPSEPT.getText();
@@ -480,6 +523,12 @@ public class PTSettingPage extends TestBase {
 				break;
 			case "15":
 				effPT = PNGEPT.getText();
+				break;
+			case "16":
+				effPT = WMEPT.getText();
+				break;
+			case "17":
+				effPT = IMEPT.getText();
 				break;
 			}	
 			
@@ -515,10 +564,10 @@ public class PTSettingPage extends TestBase {
 				givenPT = AVGPT.getText();
 				break;
 			case "7":
-				givenPT = PPGPT.getText();
+				givenPT = SXGGPT.getText();
 				break;
 			case "8":
-				givenPT = SXGGPT.getText();
+				givenPT = PPGPT.getText();
 				break;
 			case "9":
 				givenPT = PPSGPT.getText();
@@ -540,11 +589,17 @@ public class PTSettingPage extends TestBase {
 				break;
 			case "15":
 				givenPT = PNGGPT.getText();
-				break;		
+				break;	
+			case "16":
+				givenPT = WMGPT.getText();
+				break;
+			case "17":
+				givenPT = IMGPT.getText();
+				break;
 			}	
-			
+			//System.out.println("hello hihi : " + givenPT);
 			int givenEnd = givenPT.indexOf('+') - 1;
-			
+			//System.out.println("hello check : " + givenPT.substring(0,givenEnd));
 			return givenPT.substring(0,givenEnd);
 
 		}

@@ -6,10 +6,10 @@
 			<!--<suite-file path="testng_Login.xml"></suite-file>-->
 			<!--<suite-file path="testng_AccountList.xml"></suite-file>-->
 			<!--<suite-file path="testng_Credit.xml"></suite-file>
-			<suite-file path="testng_AgActivation.xml"></suite-file>
-			<suite-file path="testng_PTSetting.xml"></suite-file>-->
-			<suite-file path="testng_ProductSetting.xml"></suite-file>
-			<!--<suite-file path="testng_ProductSkin.xml"></suite-file>
+			<suite-file path="testng_AgActivation.xml"></suite-file>-->
+			<suite-file path="testng_PTSetting.xml"></suite-file>
+			<!--<suite-file path="testng_ProductSetting.xml"></suite-file>
+			<suite-file path="testng_ProductSkin.xml"></suite-file>
 			<suite-file path="testng_ExtraPT.xml"></suite-file>-->
 		</suite-files>
 	</suite>

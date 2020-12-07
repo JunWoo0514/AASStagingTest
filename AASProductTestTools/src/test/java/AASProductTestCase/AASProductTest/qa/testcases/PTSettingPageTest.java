@@ -169,7 +169,7 @@ public class PTSettingPageTest extends TestBase{
 							+ ", initial Effective PT Value : " + initialEPT);
 		context.setAttribute("Process2", "Test with Product : " + productName + " with PT Value : " + CANegativePT02);
 		ptSettingPage.PTSettingTestSingle(prdID,CANegativePT02);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		String finalGPT = ptSettingPage.getGivenPTResult(prdID);
 		String finalEPT = ptSettingPage.getEffectivePTResult(prdID);
 		double newGPT = Double.parseDouble(finalGPT);
@@ -214,7 +214,7 @@ public class PTSettingPageTest extends TestBase{
 							+ ", initial Effective PT Value : " + initialEPT);
 		context.setAttribute("Process2", "Test with Product : " + productName + " with PT Value : " + SMAPositivePT);
 		ptSettingPage.PTSettingTestSingle(prdID,SMAPositivePT);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		String finalGPT = ptSettingPage.getGivenPTResult(prdID);
 		String finalEPT = ptSettingPage.getEffectivePTResult(prdID);
 		double newGPT = Double.parseDouble(finalGPT);
@@ -234,7 +234,7 @@ public class PTSettingPageTest extends TestBase{
 							+ ", initial Effective PT Value : " + initialEPT);
 		context.setAttribute("Process2", "Test with Product : " + productName + " with PT Value : " + SMANegativePT01);
 		ptSettingPage.PTSettingTestSingle(prdID,SMANegativePT01);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		String finalGPT = ptSettingPage.getGivenPTResult(prdID);
 		String finalEPT = ptSettingPage.getEffectivePTResult(prdID);
 		double newGPT = Double.parseDouble(finalGPT);
@@ -254,7 +254,7 @@ public class PTSettingPageTest extends TestBase{
 							+ ", initial Effective PT Value : " + initialEPT);
 		context.setAttribute("Process2", "Test with Product : " + productName + " with PT Value : " + SMANegativePT02);
 		ptSettingPage.PTSettingTestSingle(prdID,SMANegativePT02);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		String finalGPT = ptSettingPage.getGivenPTResult(prdID);
 		String finalEPT = ptSettingPage.getEffectivePTResult(prdID);
 		double newGPT = Double.parseDouble(finalGPT);
@@ -309,7 +309,7 @@ public class PTSettingPageTest extends TestBase{
 		context.setAttribute("Process", "MA Tier Test On Check on Product : " + productName + " with expected PT Value : " + maxMAPT);		
 		Thread.sleep(1000);
 		String finalGPT = ptSettingPage.getGivenPTResultAG(prdID);
-		System.out.print("Check Return!!!! : " + finalGPT);
+		System.out.println("Check Return!!!! : " + finalGPT);
 		String finalEPT = ptSettingPage.getEffectivePTResult(prdID);
 		double newGPT = Double.parseDouble(finalGPT);
 		double newEPT = Double.parseDouble(finalEPT);
@@ -327,7 +327,7 @@ public class PTSettingPageTest extends TestBase{
 							+ ", initial Effective PT Value : " + initialEPT);
 		context.setAttribute("Process2", "Test with Product : " + productName + " with PT Value : " + MAPositivePT);
 		ptSettingPage.PTSettingTestSingle(prdID,MAPositivePT);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		String finalGPT = ptSettingPage.getGivenPTResultAG(prdID);
 		String finalEPT = ptSettingPage.getEffectivePTResult(prdID);
 		double newGPT = Double.parseDouble(finalGPT);
@@ -347,7 +347,7 @@ public class PTSettingPageTest extends TestBase{
 							+ ", initial Effective PT Value : " + initialEPT);
 		context.setAttribute("Process2", "Test with Product : " + productName + " with PT Value : " + MANegativePT);
 		ptSettingPage.PTSettingTestSingle(prdID,MANegativePT);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		String finalGPT = ptSettingPage.getGivenPTResultAG(prdID);
 		String finalEPT = ptSettingPage.getEffectivePTResult(prdID);
 		double newGPT = Double.parseDouble(finalGPT);
