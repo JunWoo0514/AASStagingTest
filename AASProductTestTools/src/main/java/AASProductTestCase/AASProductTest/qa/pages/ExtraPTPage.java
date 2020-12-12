@@ -201,8 +201,8 @@ public class ExtraPTPage extends TestBase{
 		Select qsPT = new Select(QSPTSelect);
 		Select sgPT = new Select(SGPTSelect);
 		Select pngPT = new Select(PNGPTSelect);
-		Select WMPT = new Select(WMPTSelect);
-		Select IMPT = new Select(IMPTSelect);
+		Select wmPT = new Select(WMPTSelect);
+		Select imPT = new Select(IMPTSelect);
 		
 		
 		switch (prdID) {
@@ -252,10 +252,10 @@ public class ExtraPTPage extends TestBase{
 				pngPT.selectByVisibleText(PTValue);	
 				break;	
 			case "16":
-				pngPT.selectByVisibleText(PTValue);	
+				wmPT.selectByVisibleText(PTValue);	
 				break;	
 			case "17":
-				pngPT.selectByVisibleText(PTValue);	
+				imPT.selectByVisibleText(PTValue);	
 				break;	
 		}
 	}
@@ -276,8 +276,8 @@ public class ExtraPTPage extends TestBase{
 		Select qsPT = new Select(QSPTSelect);
 		Select sgPT = new Select(SGPTSelect);
 		Select pngPT = new Select(PNGPTSelect);
-		Select wmPT = new Select(PNGPTSelect);
-		Select imPT = new Select(PNGPTSelect);
+		Select wmPT = new Select(WMPTSelect);
+		Select imPT = new Select(IMPTSelect);
 
 		evoPT.selectByVisibleText(PTValue);	
 		bgPT.selectByVisibleText(PTValue);	
