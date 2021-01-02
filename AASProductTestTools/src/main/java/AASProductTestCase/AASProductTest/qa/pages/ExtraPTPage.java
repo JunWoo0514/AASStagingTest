@@ -82,6 +82,9 @@ public class ExtraPTPage extends TestBase{
 	@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[20]") 
 	WebElement IMPT;
 
+	@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[21]") 
+	WebElement UKPT;
+
 	//Select (Combo Box) Element
 	@FindBy(id="evo_pt") 
 	WebElement EvoPTSelect;
@@ -134,6 +137,8 @@ public class ExtraPTPage extends TestBase{
 	@FindBy(id="im_pt") 
 	WebElement IMPTSelect;
 
+	@FindBy(id="ukt_pt") 
+	WebElement UKPTSelect;
 	//Initializing the Page Objects:
 	public ExtraPTPage() {
 		PageFactory.initElements(driver, this);
@@ -150,8 +155,9 @@ public class ExtraPTPage extends TestBase{
 		//clearText(filterName);
 		//writeText(filterName,agCode);
 		filterName.sendKeys(agCode);
-		Thread.sleep(2000);	
+		Thread.sleep(3000);	
 		filterBtn.click();
+		Thread.sleep(2000);	
 		//click(filterBtn);
 	}
 	
@@ -169,7 +175,7 @@ public class ExtraPTPage extends TestBase{
 		this.selectPT(prdID, PTValue);
 		saveBtn.click();
 		//click(saveBtn);
-		Thread.sleep(2500);			
+		Thread.sleep(3000);			
 		//new WebDriverWait(driver, 10)
         //.until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
@@ -181,7 +187,7 @@ public class ExtraPTPage extends TestBase{
 		editBtn.click();
 		this.selectPTALL(PTValue);
 		saveBtn.click();
-		Thread.sleep(2500);			
+		Thread.sleep(3000);			
 		driver.switchTo().alert().accept();
 	}
 	
@@ -203,7 +209,7 @@ public class ExtraPTPage extends TestBase{
 		Select pngPT = new Select(PNGPTSelect);
 		Select wmPT = new Select(WMPTSelect);
 		Select imPT = new Select(IMPTSelect);
-		
+		Select ukPT = new Select(UKPTSelect);
 		
 		switch (prdID) {
 			case "1":
@@ -257,6 +263,9 @@ public class ExtraPTPage extends TestBase{
 			case "17":
 				imPT.selectByVisibleText(PTValue);	
 				break;	
+			case "18":
+				ukPT.selectByVisibleText(PTValue);	
+				break;	
 		}
 	}
 	
@@ -278,6 +287,7 @@ public class ExtraPTPage extends TestBase{
 		Select pngPT = new Select(PNGPTSelect);
 		Select wmPT = new Select(WMPTSelect);
 		Select imPT = new Select(IMPTSelect);
+		Select ukPT = new Select(UKPTSelect);
 
 		evoPT.selectByVisibleText(PTValue);	
 		bgPT.selectByVisibleText(PTValue);	
@@ -296,6 +306,7 @@ public class ExtraPTPage extends TestBase{
 		pngPT.selectByVisibleText(PTValue);	
 		wmPT.selectByVisibleText(PTValue);	
 		imPT.selectByVisibleText(PTValue);	
+		ukPT.selectByVisibleText(PTValue);	
 	}
 	
 	
@@ -354,6 +365,9 @@ public class ExtraPTPage extends TestBase{
 			break;
 		case "17":
 			newPT = IMPT.getText();
+			break;
+		case "18":
+			newPT = UKPT.getText();
 			break;
 		}	
 		
