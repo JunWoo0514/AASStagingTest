@@ -80,6 +80,9 @@ public class ProductSettingPage extends TestBase {
 
 		@FindBy(xpath="//select[contains(@name,'im_status')]") 
 		WebElement imStatusSelect;
+		
+		@FindBy(xpath="//select[contains(@name,'ukt_status')]") 
+		WebElement ukStatusSelect;
 		//@FindBy(xpath="//select[contains(@name,'sg_status')]") 
 		//WebElement sgStatusSelect;
 		//change to get Xpath 
@@ -137,6 +140,9 @@ public class ProductSettingPage extends TestBase {
 		
 		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[21]/font") 
 		WebElement ImStatus;
+		
+		@FindBy(xpath="//div[contains(@class,'table-responsive')]/table/tbody/tr/td[22]/font") 
+		WebElement UkStatus;
 		
 		//Apply Button
 		@FindBy(id="btnSubmit") 
@@ -204,6 +210,7 @@ public class ProductSettingPage extends TestBase {
 			Select pngSelect = new Select(pngStatusSelect);
 			Select wmSelect = new Select(wmStatusSelect);
 			Select imSelect = new Select(imStatusSelect);
+			Select ukSelect = new Select(ukStatusSelect);
 
 			switch (prdID) {
 				case "1":
@@ -257,6 +264,9 @@ public class ProductSettingPage extends TestBase {
 				case "17":
 					imSelect.selectByVisibleText(NewStatus);	
 					break;
+				case "18":
+					ukSelect.selectByVisibleText(NewStatus);	
+					break;
 			}
 		}
 		
@@ -280,6 +290,7 @@ public class ProductSettingPage extends TestBase {
 			Select pngSelect = new Select(pngStatusSelect);
 			Select wmSelect = new Select(wmStatusSelect);
 			Select imSelect = new Select(imStatusSelect);
+			Select ukSelect = new Select(ukStatusSelect);
 			
 			evoSelect.selectByVisibleText(NewStatus);	
 			bgSelect.selectByVisibleText(NewStatus);	
@@ -298,6 +309,7 @@ public class ProductSettingPage extends TestBase {
 			pngSelect.selectByVisibleText(NewStatus);
 			wmSelect.selectByVisibleText(NewStatus);	
 			imSelect.selectByVisibleText(NewStatus);
+			ukSelect.selectByVisibleText(NewStatus);
 		}
 		
 		public String getStatusResult(String PrdID){
@@ -355,6 +367,9 @@ public class ProductSettingPage extends TestBase {
 				break;
 			case "17":
 				newStat = ImStatus.getText();
+				break;
+			case "18":
+				newStat = UkStatus.getText();
 				break;
 			}	
 			

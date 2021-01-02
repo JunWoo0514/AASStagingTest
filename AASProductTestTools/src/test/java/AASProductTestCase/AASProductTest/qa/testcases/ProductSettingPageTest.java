@@ -129,8 +129,42 @@ public class ProductSettingPageTest extends TestBase{
 		Assert.assertEquals(newStatus,result);
 	}
 	
-	@Test(priority=6)
+	@Test(priority=6, dataProvider = "getProductListeData")
+	public void ProductSettingMASingleUpdate(String prdID, String productName, ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("active");
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "Test with Product : " + productName + " with Status Value : " + newStatus);
+		productSettingPage.ProductStatusPositiveTest(prdID,newStatus);
+		Thread.sleep(2000);
+		String result = productSettingPage.getStatusResult(prdID);
+		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
+		Assert.assertEquals(newStatus,result);
+	}
+	
+	@Test(priority=7)
 	public void ProductSettingMAGroupUpdate(ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("disable");
+		productSettingPage.findTestingAccount(prop.getProperty("MA2"));
+		Thread.sleep(1000);
+		context.setAttribute("Steps", "1");
+		context.setAttribute("Process", "MA Tier Test All Product with status Value : " + newStatus);
+		productSettingPage.ProductStatusGroupTest(newStatus);
+		Thread.sleep(1000);
+	}
+	
+	@Test(priority=8, dataProvider = "getProductListeData")
+	public void MAProductStatusGroupActiveTest(String prdID, String productName, ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("disable");
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "MA Tier Check on Product : " + productName + " with Status Value : " + newStatus);		
+		Thread.sleep(2000);
+		String result = productSettingPage.getStatusResult(prdID);
+		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
+		Assert.assertEquals(newStatus,result);
+	}
+	
+	@Test(priority=9)
+	public void ProductSettingMAGroupUpdate02(ITestContext context) throws InterruptedException {
 		String newStatus = prop.getProperty("active");
 		productSettingPage.findTestingAccount(prop.getProperty("MA2"));
 		Thread.sleep(1000);
@@ -140,18 +174,7 @@ public class ProductSettingPageTest extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority=7, dataProvider = "getProductListeData")
-	public void MAProductStatusGroupActiveTest(String prdID, String productName, ITestContext context) throws InterruptedException {
-		String newStatus = prop.getProperty("active");
-		context.setAttribute("Steps", "2");
-		context.setAttribute("Process", "MA Tier Check on Product : " + productName + " with Status Value : " + newStatus);		
-		Thread.sleep(2000);
-		String result = productSettingPage.getStatusResult(prdID);
-		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
-		Assert.assertEquals(newStatus,result);
-	}
-	
-	@Test(priority=8)
+	@Test(priority=10)
 	public void ProceedAGCheck() throws InterruptedException {
 		productSettingPage.DownlineClick();
 		Thread.sleep(1000);
@@ -159,7 +182,7 @@ public class ProductSettingPageTest extends TestBase{
 		//Assert.assertEquals(newStatus,result);
 	}
 	
-	@Test(priority=9, dataProvider = "getProductListeData")
+	@Test(priority=11, dataProvider = "getProductListeData")
 	public void ProductStatusDownlineCheck_AG(String prdID, String productName, ITestContext context) throws InterruptedException {
 		String newStatus = prop.getProperty("disable");
 		context.setAttribute("Steps", "2");
@@ -170,9 +193,21 @@ public class ProductSettingPageTest extends TestBase{
 		Assert.assertEquals(newStatus,result);
 	}
 	
-	@Test(priority=10)
-	public void ProductSettingAGroupUpdate(ITestContext context) throws InterruptedException {
+	@Test(priority=12, dataProvider = "getProductListeData")
+	public void ProductSettingAGSingleUpdate(String prdID, String productName, ITestContext context) throws InterruptedException {
 		String newStatus = prop.getProperty("active");
+		context.setAttribute("Steps", "2");
+		context.setAttribute("Process", "Test with Product : " + productName + " with Status Value : " + newStatus);
+		productSettingPage.ProductStatusPositiveTest(prdID,newStatus);
+		Thread.sleep(2000);
+		String result = productSettingPage.getStatusResult(prdID);
+		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
+		Assert.assertEquals(newStatus,result);
+	}
+	
+	@Test(priority=13)
+	public void ProductSettingAGroupUpdate(ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("disable");
 		productSettingPage.findTestingAccount(prop.getProperty("AG2"));
 		Thread.sleep(1000);
 		context.setAttribute("Steps", "1");
@@ -181,15 +216,26 @@ public class ProductSettingPageTest extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority=11, dataProvider = "getProductListeData")
+	@Test(priority=14, dataProvider = "getProductListeData")
 	public void AGProductStatusGroupActiveTest(String prdID, String productName, ITestContext context) throws InterruptedException {
-		String newStatus = prop.getProperty("active");
+		String newStatus = prop.getProperty("disable");
 		context.setAttribute("Steps", "2");
 		context.setAttribute("Process", "AG Tier Check on Product : " + productName + " with Status Value : " + newStatus);		
 		Thread.sleep(2000);
 		String result = productSettingPage.getStatusResult(prdID);
 		context.setAttribute("Result", "Result expected value : " + newStatus + " and received value : " + result);
 		Assert.assertEquals(newStatus,result);
+	}
+	
+	@Test(priority=15)
+	public void ProductSettingAGroupUpdate02(ITestContext context) throws InterruptedException {
+		String newStatus = prop.getProperty("active");
+		productSettingPage.findTestingAccount(prop.getProperty("AG2"));
+		Thread.sleep(1000);
+		context.setAttribute("Steps", "1");
+		context.setAttribute("Process", "AG Tier Test All Product with status Value : " + newStatus);
+		productSettingPage.ProductStatusGroupTest(newStatus);
+		Thread.sleep(1000);
 	}
 	
 	/*@Test(priority=6)

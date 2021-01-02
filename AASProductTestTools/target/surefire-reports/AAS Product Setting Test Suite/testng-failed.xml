@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AAS Product Setting Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="AASProductTestCase.AASProductTest.qa.ExtentReportListener.TestListeners"/>
+  </listeners>
+  <test name="AAS Product Setting Test(failed)">
+    <classes>
+      <class name="AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest">
+        <methods>
+          <include name="ProductSettingMASingleUpdate"/>
+          <include name="ProductStatusPositiveTest01"/>
+          <include name="setUp"/>
+          <include name="SMAProductStatusGroupActiveTest"/>
+          <include name="ProceedAGCheck"/>
+          <include name="ProceedMACheck"/>
+          <include name="ProductSettingAGSingleUpdate"/>
+          <include name="ProductSettingSMAGroupUpdate"/>
+          <include name="ProductSettingAGroupUpdate02"/>
+          <include name="ProductStatusDownlineCheck_AG"/>
+          <include name="ProductSettingMAGroupUpdate"/>
+          <include name="tearDown"/>
+          <include name="ProductSettingAGroupUpdate"/>
+          <include name="ProductSettingMAGroupUpdate02"/>
+          <include name="MAProductStatusGroupActiveTest"/>
+          <include name="ProductStatusDownlineCheck_MA"/>
+          <include name="AGProductStatusGroupActiveTest"/>
+        </methods>
+      </class> <!-- AASProductTestCase.AASProductTest.qa.testcases.ProductSettingPageTest -->
+    </classes>
+  </test> <!-- AAS Product Setting Test(failed) -->
+</suite> <!-- Failed suite [AAS Product Setting Test Suite] -->
